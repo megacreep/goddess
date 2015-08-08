@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    url(r'^$', 'portfolio.views.index', name='index'),
     url(r'^polls/', include('polls.urls', namespace='polls')),
     url(r'^portfolio/', include('portfolio.urls', namespace='portfolio')),
     url(r'^admin/', include(admin.site.urls)),
