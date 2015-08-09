@@ -8,13 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-09 12:02+0800\n"
+"POT-Creation-Date: 2015-08-09 21:14+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: .\goddess\settings.py:115
+msgid "Chinese"
+msgstr "中文"
+
+#: .\goddess\settings.py:116
+msgid "English"
+msgstr "英文"
 
 #: .\portfolio\templates\registration\login.html:20
 #: .\portfolio\templates\registration\login.html:45
@@ -31,16 +39,16 @@ msgid "Login"
 msgstr "登录"
 
 #: .\portfolio\templates\registration\login.html:28
-msgid "Forget password?"
+msgid "Forget password"
 msgstr "忘记密码"
 
 #: .\portfolio\templates\registration\login.html:44
 msgid "only english characters and digits accepted with a minimum of 6"
-msgstr "仅接受英文字母和数字，最小长度为6"
+msgstr "请输入英文字母以及数字，且最小长度为6个字符"
 
 #: .\portfolio\templates\registration\login.html:50
 msgid "minimum of 6 characters"
-msgstr "最小长度为6"
+msgstr "最小长度为6个字符"
 
 #: .\portfolio\templates\registration\login.html:55
 msgid "Passwords don't match"
@@ -56,8 +64,12 @@ msgstr "电子邮箱"
 
 #: .\portfolio\templates\registration\login.html:60
 msgid "Please input valid email address"
-msgstr "请输入有效电子邮箱地址"
+msgstr "请输入有效邮箱地址"
 
 #: .\portfolio\templates\registration\login.html:65
 msgid "Signup"
 msgstr "注册"
+
+#: .\templates\admin\base_site.html:3
+msgid "Django site admin"
+msgstr "Django 管理员网站"
