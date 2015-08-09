@@ -1,5 +1,5 @@
 {% extends "portfolio/base.html" %}
-
+{% load i18n %}
 {% block content %}
     <div id="login" class="container">
       {% if form.errors %}
@@ -16,15 +16,16 @@
                 <form class="form-horizontal" method="post" action="{% url 'django.contrib.auth.views.login' %}" role="form">
                   {% csrf_token %}
                   <div class="form-group">
-                      <input type="text" class="form-control" name="username" placeholder="Username" required />
+                      <input type="text" class="form-control" name="username"
+                             placeholder="{% trans 'Username' %}" required />
                   </div>
                   <div class="form-group">
-                      <input type="password" class="form-control" name="password" placeholder="Password" required />
+                      <input type="password" class="form-control" name="password" placeholder="{% trans 'Password' %}" required />
                   </div>
                   <div class="form-group">
                     <div class="col-xs-12">
-                      <button type="submit" class="btn btn-success">Login</button>
-                      &nbsp;<a href="{% url 'password_reset' %}">Forget password?</a>
+                      <button type="submit" class="btn btn-success">{% trans 'Login' %}</button>
+                      &nbsp;<a href="{% url 'password_reset' %}">{% trans 'Forget password'%}?</a>
                     </div>
                   </div>
                   <input type="hidden" name="next" value="{{ form.next }}" />
@@ -40,28 +41,28 @@
               {% csrf_token %}
               <div class="form-group has-feedback">
                 <input type="text" pattern="^[_A-z0-9]{6,}$" maxlength="15" class="form-control"
-                         data-error="only english characters and digits accepted with a minimum of 6"
-                         name="username" placeholder="Username" required />
+                         data-error="{% trans 'only english characters and digits accepted with a minimum of 6' %}"
+                         name="username" placeholder="{% trans 'Username' %}" required />
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group has-feedback">
                 <input type="password" data-minlength="6" class="form-control" name="password1" id="password1"
-                       data-error="minimum of 6 characters" placeholder="Password" required />
+                       data-error="{% trans 'minimum of 6 characters' %}" placeholder="{% trans 'Password' %}" required />
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group has-feedback">
                 <input type="password" data-match="#password1" class="form-control" name="password2"
-                       data-match-error="Passwords don't match" placeholder="Confirm Password" required />
+                       data-match-error="{% trans "Passwords don't match" %}" placeholder="{% trans 'Confirm Password' %}" required />
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email Address"
-                       data-error="Please input valid email address" required />
+                <input type="email" class="form-control" name="email" placeholder="{% trans 'Email Address' %}"
+                       data-error="{% trans 'Please input valid email address' %}" required />
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <button type="submit" class="btn btn-success">Signup</button>
+                  <button type="submit" class="btn btn-success">{% trans 'Signup' %}</button>
                 </div>
               </div>
               <input type="hidden" name="next" value="{{ form.next }}" />
