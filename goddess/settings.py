@@ -112,5 +112,6 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/goddess/static/'
 
 LOGIN_REDIRECT_URL = '/portfolio'
