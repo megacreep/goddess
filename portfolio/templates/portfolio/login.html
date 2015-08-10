@@ -25,7 +25,7 @@
                   <div class="form-group">
                     <div class="col-xs-12">
                       <button type="submit" class="btn btn-success">{% trans 'Login' %}</button>
-                      &nbsp;<a href="{% url 'password_reset' %}">{% trans 'Forget password'%}?</a>
+                      &nbsp;<a href="{% url 'password_reset' %}">{% trans 'Forget password' %}?</a>
                     </div>
                   </div>
                   <input type="hidden" name="next" value="{{ form.next }}" />
@@ -52,7 +52,7 @@
               </div>
               <div class="form-group has-feedback">
                 <input type="password" data-match="#password1" class="form-control" name="password2"
-                       data-match-error="{% trans "Passwords don't match" %}" placeholder="{% trans 'Confirm Password' %}" required />
+                       data-match-error="{% trans "Passwords doesn't match" %}" placeholder="{% trans 'Confirm Password' %}" required />
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">

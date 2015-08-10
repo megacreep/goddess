@@ -1,7 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.template import RequestContext
 
@@ -25,6 +24,6 @@ def signup(request):
             print user_form.error_messages
     else:
         user_form = UserCreationForm()
-    return render_to_response('registration/login.html', {'form': user_form}, context)
+    return render_to_response('portfolio/login.html', {'form': user_form}, context)
 
 

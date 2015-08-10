@@ -25,7 +25,7 @@ SECRET_KEY = '=3=ue7fd7bov94vn8c+#efpzznknst%i^#_ts7+t9t#o0(t7qm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yutianxin.me',]
+ALLOWED_HOSTS = ['yutianxin.me', ]
 
 # Application definition
 
@@ -107,10 +107,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-LOCALE_PATH = (
+LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
-
 LANGUAGES = (
     ('zh-CN', _('Chinese')),
     ('en', _('English')),
