@@ -8,6 +8,12 @@ from django.template import RequestContext
 def index(request):
     return render(request, 'portfolio/index.html')
 
+def projects(request):
+    return render(request, 'portfolio/projects.html')
+
+def demo(request):
+    return render(request, 'portfolio/index_backup.html')
+
 def signup(request):
     context = RequestContext(request)
     if request.method == 'POST':
