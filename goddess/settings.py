@@ -146,7 +146,7 @@ LOGGING = {
         'applogfile': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, '/goddess.log'),
+            'filename': os.path.join(BASE_DIR, 'goddess.log'),
             'maxBytes': 1024 * 1024 * 15,
             'backupCount': 10,
         },
