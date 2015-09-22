@@ -11,6 +11,15 @@ def index(request):
 def projects(request):
     return render(request, 'portfolio/projects.html')
 
+def portfolio(request):
+    return render(request, 'portfolio/portfolio.html')
+
+def cv(request):
+    return render(request, 'portfolio/cv.html')
+
+def contact(request):
+    return render(request, 'portfolio/contact.html')
+
 def demo(request):
     return render(request, 'portfolio/index_backup.html')
 

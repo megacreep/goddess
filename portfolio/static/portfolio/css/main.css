@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+html {
+  overflow-y: scroll;
+}
 body {
   background: #ffffff;
   color: #999;
@@ -148,14 +151,10 @@ a:focus {
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
-#contact .box {
-  background-color: #222;
-  color: #999;
-}
 #contact .box h1,
 #contact .box h2,
 #contact .box h3 {
-  color: #fff;
+  color: #666;
 }
 #contact .box a {
   color: #999;
@@ -166,8 +165,7 @@ a:focus {
 #contact .box input[type="text"],
 #contact .box input[type="email"],
 #contact .box textarea {
-  background-color: #111;
-  border: 0;
+  background-color: #eee;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
@@ -176,7 +174,7 @@ a:focus {
 #contact .box input[type="text"]:focus,
 #contact .box input[type="email"]:focus,
 #contact .box textarea:focus {
-  background-color: #000;
+  background-color: #ddd;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -201,9 +199,6 @@ a:focus {
   position: relative;
   margin-bottom: 30px;
   font-size: 48px;
-}
-#portfolio .box {
-  background: #f3f3f3;
 }
 .portfolio-items,
 .portfolio-filter {
@@ -499,7 +494,7 @@ a:focus {
   background: #fff;
   border-radius: 0;
   border: 0;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #999999;
   padding: 0;
   /*-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
   /*-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
