@@ -5,6 +5,7 @@ jQuery(function($) {
 			interval: 10000,
 			pause: false
 		});
+		$('body').scrollspy({target: '#nav_sidebar'});
 	});
 
 	//Ajax contact
@@ -26,10 +27,10 @@ jQuery(function($) {
 		}, 500);
 	});
 
-	//scrollspy
-	$('[data-spy="scroll"]').each(function () {
-		var $spy = $(this).scrollspy('refresh')
-	})
+	////scrollspy
+	//$('[data-spy="scroll"]').each(function () {
+	//	var $spy = $(this).scrollspy('refresh')
+	//})
 
 	//PrettyPhoto
 	//$("a.preview").prettyPhoto({
