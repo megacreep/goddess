@@ -32,12 +32,12 @@ jQuery(function($) {
 	})
 
 	//PrettyPhoto
-	$("a.preview").prettyPhoto({
-		social_tools: false
-	});
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        social_tools: false
-    });
+	//$("a.preview").prettyPhoto({
+	//	social_tools: false
+	//});
+    //$("a[rel^='prettyPhoto']").prettyPhoto({
+     //   social_tools: false
+    //});
 
 	//Isotope
 	$(window).load(function(){

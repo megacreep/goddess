@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^portfolio/$', views.portfolio, name='portfolio'),
     url(r'^cv/$', views.cv, name='cv'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^project1/$', views.project1, name='project1')
 ]
