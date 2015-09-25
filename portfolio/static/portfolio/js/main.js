@@ -5,7 +5,7 @@ jQuery(function($) {
 			interval: 10000,
 			pause: false
 		});
-		$('body').scrollspy({target: '#nav_sidebar'});
+		$('body').scrollspy({target: '.nav-container'});
 	});
 
 	//Ajax contact
@@ -55,5 +55,22 @@ jQuery(function($) {
 			$portfolio.isotope({ filter: selector });
 			return false;
 		});
-	});
+	})
+
+    $(document).ready(function() {
+        var sideBar = $(".nav-box");
+        var content = $("#project_detail");
+        var projects = $("#projects_list");
+        if (sideBar) {
+            $(".nav-container").height(content.height());
+        }
+        $(document).scroll(function() {
+            $('#position').text($(document).scrollTop() + " " + projects.offset().top);
+            if (sideBar.offset().top + sideBar.height() > projects.offset().top) {
+                sideBar.css({position: 'absolute', bottom: 0, top: "auto"});
+            } else if(sideBar.offset().top - $(document).scrollTop() > 100) {
+                sideBar.removeAttr("style");
+            }
+        });
+    });
 });
