@@ -50,3 +50,6 @@ def project1(request):
 
 def research1(request):
     return render(request, 'portfolio/research1.html')
+
+def research2(request):
+    return render(request, 'portfolio/research_demo.html')

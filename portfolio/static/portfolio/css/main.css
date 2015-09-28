@@ -869,3 +869,7 @@ textarea#message {
         background: white;
     }
 }
+
+.nav-submenu {
+    padding-left: 20px;
+}

@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^project1/$', views.project1, name='project1'),
     url(r'^research1/$', views.research1, name="research1"),
+    url(r'^research2/$', views.research2, name="research2"),
 ]
