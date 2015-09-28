@@ -475,12 +475,6 @@ a:focus {
     border-right: dashed 1px black;
 }
 
-@media (max-width: 768px) {
-    .profile {
-        border: hidden;
-    }
-}
-
 .carousel.scale .left-arrow,
 .carousel.scale .right-arrow {
     top: 30%;
@@ -595,12 +589,16 @@ a:focus {
     background: #fff;
     border-radius: 0;
     border: 0;
-    border-bottom: solid 1px #999999;
     padding: 0;
     /*-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
     /*-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
     /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
     overflow: hidden;
+    background: url(../images/dot.png) repeat-x 0 50%;
+}
+
+.navbar-default a {
+    background: #ffffff;
 }
 
 .navbar-default .first a {
@@ -624,6 +622,14 @@ a:focus {
     /*background: url(../images/logo.png) no-repeat 0 50%;*/
 }
 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:visited {
+    background-color: white;
+}
+
+
+
 .navbar-default .navbar-nav {
     display: inline-block;
     float: none;
@@ -636,6 +642,7 @@ a:focus {
 
 .navbar-default .navbar-nav > li {
     margin-left: 1px;
+    margin-top: 5px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -665,8 +672,9 @@ a:focus {
 .navbar-default .navbar-nav > li.active:hover > a:focus,
 .navbar-default .navbar-nav > li:hover > a:focus,
 .navbar-default .navbar-nav > li:focus > a:focus {
-    /*background-color: #52b6ec;*/
-    color: #52b6ec;
+    background-color: #52b6ec;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .icon-lg {
@@ -851,4 +859,13 @@ textarea#message {
 }
 .research-item:hover a {
     border-bottom: solid 1px #999;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        border: hidden;
+    }
+    .navbar-default {
+        background: white;
+    }
 }

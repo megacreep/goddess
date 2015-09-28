@@ -63,7 +63,7 @@ jQuery(function ($) {
             $portfolio.isotope({filter: selector});
             return false;
         });
-    })
+    });
 
     $(document).ready(function () {
         var sideBar = $(".nav-box");
@@ -80,5 +80,7 @@ jQuery(function ($) {
                 sideBar.removeAttr("style");
             }
         });
+
+        $('.navbar-nav a[href$="' + $('body > section:first').attr('id') + '/"]').parent().addClass("active");
     });
 });
