@@ -1,6 +1,14 @@
 {% extends 'portfolio/base.html' %}
 {% load staticfiles %}
 {% load i18n %}
+
+{% comment %}
+This page shows the project lists.
+This is the base template for projects page and all project detail pages.
+All of these pages should implement the project_detail block.
+{% endcomment %}
+
+
 {% block content %}
 
   {% block project_detail %}
@@ -9,8 +17,9 @@
   <section id="projects_list">
     <div class="container">
       <div class="box">
-        <ul class="portfolio-items col-4">
-          <li class="portfolio-item apps">
+        <ul class="portfolio-items col-4">  {# The col-* class defines how many columns should be used for portfolio items #}
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
                 <img src="{% static 'portfolio/images/portfolio/thumb/item1.jpg' %}" alt="">
