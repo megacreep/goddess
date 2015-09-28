@@ -33,6 +33,12 @@ a {
     float: none;
 }
 
+.bcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn {
     font-weight: 300;
     border: 0;
@@ -210,7 +216,7 @@ a:focus {
 }
 
 .box {
-    padding: 50px 30px;
+    padding: 30px 30px;
     background: #fff;
     border-bottom: 1px solid #e9e9e9;
     position: relative;
@@ -246,7 +252,6 @@ a:focus {
 }
 
 .portfolio-filter {
-    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -322,9 +327,15 @@ a:focus {
 
 .portfolio-item .overlay .preview {
     position: relative;
-    top: 50%;
+    width: 100%;
+    height: 100%;
     display: inline-block;
-    margin-top: -20px;
+    padding: 20px 10px;
+}
+
+.overlay .preview span {
+    color: #555;
+    font-size: 16px;
 }
 
 .portfolio-item:hover .overlay {
@@ -826,4 +837,15 @@ textarea#message {
 
 .nav-container > li > a {
     padding: 15px 40px;
+}
+
+.research-item h3 a{
+    color: #777;
+}
+.research-item a {
+    color: #999;
+}
+
+.research-item a:hover {
+    border-bottom: solid 1px black;
 }

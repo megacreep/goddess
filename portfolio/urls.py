@@ -3,11 +3,13 @@ import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^demo/$', views.demo, name='demo'),
     url(r'^index/$', views.index, name='index'),
     url(r'^projects/$', views.projects, name='projects'),
-    url(r'^demo/$', views.demo, name='demo'),
-    url(r'^portfolio/$', views.portfolio, name='portfolio'),
+    url(r'^research/$', views.research, name='research'),
+    url(r'^interests/$', views.interests, name='interests'),
     url(r'^cv/$', views.cv, name='cv'),
     url(r'^contact/$', views.contact, name='contact'),
-    url(r'^project1/$', views.project1, name='project1')
+    url(r'^project1/$', views.project1, name='project1'),
+    url(r'^research1/$', views.research1, name="research1"),
 ]

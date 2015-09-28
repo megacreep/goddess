@@ -1,0 +1,53 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+  <section id="interests">
+    <div class="container">
+      <div class="box">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2 class="vcenter">Snowboard</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-4">
+            <span class="lead">
+              It is real snowboarding only if the speed is over 70 km/h.
+            s</span>
+          </div>
+        </div>
+        <!--/.box-->
+      </div>w
+      <div class="box">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Another Interest</h2>
+          </div>
+          <div class="col-sm-8">
+            <span class="lead">
+              This is the interest description. This description is aligned with header.<br/>
+              This is a list:
+              <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              This is an image:
+              <img src="{% static 'portfolio/images/profile.jpg' %}" alt="interest1" class="img-responsive"/>
+              This is an image with another size:
+              <img src="{% static 'portfolio/images/profile.jpg' %}" alt="interest1" width="200px"
+                   class="img-responsive"/>
+            </span>
+          </div>
+        </div>
+        <!--/.box-->
+      </div>
+      <!--/.container-->
+    </div>
+  </section>
+  <!--/#projects-->
+
+
+{% endblock %}

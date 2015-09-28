@@ -11,8 +11,11 @@ def index(request):
 def projects(request):
     return render(request, 'portfolio/projects.html')
 
-def portfolio(request):
-    return render(request, 'portfolio/portfolio.html')
+def research(request):
+    return render(request, 'portfolio/research.html')
+
+def interests(request):
+    return render(request, 'portfolio/interests.html')
 
 def cv(request):
     return render(request, 'portfolio/cv.html')
@@ -44,3 +47,6 @@ def signup(request):
 
 def project1(request):
     return render(request, 'portfolio/project_detail.html')
+
+def research1(request):
+    return render(request, 'portfolio/research1.html')
