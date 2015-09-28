@@ -846,6 +846,9 @@ textarea#message {
     color: #999;
 }
 
-.research-item a:hover {
-    border-bottom: solid 1px black;
+.research-item:hover h3 a{
+    color: #777;
+}
+.research-item:hover a {
+    border-bottom: solid 1px #999;
 }
