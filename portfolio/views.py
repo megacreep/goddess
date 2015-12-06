@@ -3,28 +3,37 @@ from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import login, authenticate
 from django.template import RequestContext
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def index(request):
     return render(request, 'portfolio/index.html')
 
+
 def projects(request):
     return render(request, 'portfolio/projects.html')
+
 
 def research(request):
     return render(request, 'portfolio/research.html')
 
+
 def interests(request):
     return render(request, 'portfolio/interests.html')
+
 
 def cv(request):
     return render(request, 'portfolio/cv.html')
 
+
 def contact(request):
     return render(request, 'portfolio/contact.html')
 
+
 def demo(request):
     return render(request, 'portfolio/index_backup.html')
+
 
 def signup(request):
     context = RequestContext(request)
@@ -48,8 +57,45 @@ def signup(request):
 def project1(request):
     return render(request, 'portfolio/project_detail.html')
 
+
 def research1(request):
     return render(request, 'portfolio/research1.html')
 
+
 def research2(request):
     return render(request, 'portfolio/research_demo.html')
+
+
+def send_email(request):
+    context = RequestContext(request)
+
+    sender = settings.EMAIL_HOST_USER
+    name = request.POST.get('sender_name', '')
+    email = request.POST.get('email', '')
+    message = request.POST.get('message', '')
+
+    try:
+        send_mail(
+            'Message from yutianxin.me',
+            """\
+Hi Tianxin,
+
+ you have a message from {}, email address is {}. Following the message:
+
+ {}
+""".format(name, email, message),
+            sender,
+            ['limuyang08@163.com'],
+            fail_silently=False
+        )
+    except ():
+        return render(
+            request,
+            'portfolio/contact.html',
+            {'error_message': "Sorry, we could not send your message."},
+        )
+    return render(request, 'portfolio/contact.html', {
+        'success_message': "Your message has been sent."
+    },
+                  context)
+

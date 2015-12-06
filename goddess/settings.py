@@ -26,7 +26,7 @@ SECRET_KEY = '=3=ue7fd7bov94vn8c+#efpzznknst%i^#_ts7+t9t#o0(t7qm'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
 
-ALLOWED_HOSTS = ['yutianxin.me', ]
+ALLOWED_HOSTS = ['yutianxin.me',]
 
 # Application definition
 
@@ -124,3 +124,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/goddess/static/'
 
 LOGIN_REDIRECT_URL = '/portfolio'
+
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'contactemailsender@163.com'
+EMAIL_HOST_PASSWORD = 'kctglwfelvjzlmbq'
+EMAIL_USE_SSL = True
