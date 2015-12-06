@@ -80,23 +80,23 @@
 {% block content %}
 {% endblock %}
 
-{% comment %}
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/"
-                       title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights
-        Reserved.
-      </div>
-      <div class="col-sm-6">
-        <img class="pull-right" src="{% static 'portfolio/images/shapebootstrap.png' %}" alt="ShapeBootstrap"
-             title="ShapeBootstrap">
+      <div class="col-sm-6 col-sm-offset-6">
+        <a class="contact-link-item pull-right" href="https://www.linkedin.com/in/tianxin-yu-82526b84" target="_blank">
+          <img src="{% static 'portfolio/images/ico/linkedin.png' %}" alt="linkedin" width="25" height="25" />
+        </a>
+        <a class="contact-link-item pull-right" href="http://weibo.com/u/1663138255" target="_blank">
+          <img src="{% static 'portfolio/images/ico/weibo.png' %}" alt="weibo" width="25" height="25"  />
+        </a>
+        <a class="contact-link-item pull-right" href="" target="_blank">
+          <img src="{% static 'portfolio/images/ico/fb.png' %}" alt="facebook" width="25" height="25"  />
+        </a>
       </div>
     </div>
   </div>
 </footer>
-{% endcomment %}
 
 <script src="{% static 'portfolio/js/jquery.js' %}"></script>
 <script src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
