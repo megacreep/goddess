@@ -24,15 +24,12 @@ All of these pages should implement the project_detail block.
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item1.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% url 'portfolio:projects_ethu' %}">
-                  </a>
-                </div>
+                <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
+                </a>
               </div>
-              <h5>This is a brief description</h5>
+              <h5>E-THU</h5>
             </div>
           </li>
           <!--/.portfolio-item-->

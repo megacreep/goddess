@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls',
-    'portfolio'
+    'portfolio',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -130,3 +130,5 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'contactemailsender@163.com'
 EMAIL_HOST_PASSWORD = 'kctglwfelvjzlmbq'
 EMAIL_USE_SSL = True
+
+PASSWORD_REQUIRED_PASSWORD = 'ainvshen'

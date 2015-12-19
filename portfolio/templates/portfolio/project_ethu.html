@@ -20,17 +20,23 @@ a qsuedo section should be created for better user experience.
         <div class="col-sm-3">
           <div class="nav-container">
               <ul class="nav nav-pills nav-stacked nav-box">
-                <li class="active"><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-                <li class="nav-submenu"><a href="#section41">Section 4-1</a></li>
-                <li class="nav-submenu"><a href="#section42">Section 4-2</a></li>
+                <li class="active"><a href="#summary">Summary</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#goal">Priority Goal</a></li>
+                <li><a href="#overview">Project Overview</a></li>
+                <li><a href="#methodology">Methodology and Approach</a></li>
+                <li><a href="#model">Behavior Model</a></li>
+                <li><a href="#opportunity">Project Overview</a></li>
+                <li><a href="#methodology">Opportunity Field</a></li>
+                <li><a href="#develop">Development</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#prototyping">Usability Test and Prototyping</a></li>
+                <li><a href="#display">Final Design</a></li>
               </ul>
             </div>
         </div>
         <div id="content" class="col-sm-9">
-          <section id="Summary">
+          <section id="summary">
             <h3>Summary</h3>
             <ul>
               <li>What is e-THU?</li>
@@ -42,7 +48,7 @@ a qsuedo section should be created for better user experience.
             <img class="img-responsive doc-img" src="{% static 'portfolio/images/projects/ethu/cover.png' %}" />
           </section>
 
-          <section id="Background">
+          <section id="background">
             <h3>Background</h3>
             <ul>
               <li>Challenges in campus life service</li>
@@ -78,7 +84,7 @@ a qsuedo section should be created for better user experience.
             <img src="{% static 'portfolio/images/projects/ethu/review.png' %}" class="img-responsive" />
           </section>
 
-          <section id="Methodology">
+          <section id="methodology">
             <h3>Methodology and Approach</h3>
             <ul>
               <li>Service design methods were used during the research and develop phrases</li>
@@ -91,7 +97,7 @@ a qsuedo section should be created for better user experience.
           </section>
 
           <section id="model">
-            <h3>Behavior model</h3>
+            <h3>Behavior Model</h3>
             <p>
               in our behavior model, a student’s behavior to use resources is affected by different factors. We classified these factors into: subjective factors, objective factors and external factors.
               <ul>
@@ -105,8 +111,8 @@ a qsuedo section should be created for better user experience.
             <img src="{% static 'portfolio/images/projects/ethu/discover.png' %}" class="img-responsive" />
           </section>
 
-          <section id="Oportunity">
-            <h3>Opportunity field</h3>
+          <section id="opportunity">
+            <h3>Opportunity Field</h3>
             <p>We evaluated all the student needs and categorized them according to  importance and the previous solutions. We focused on Internet utilization, which is largely required among the student body but has many unsolved problems.
             </p>
             <img src="{% static 'portfolio/images/projects/ethu/opportunity.png' %}" class="img-responsive" />
@@ -157,7 +163,7 @@ a qsuedo section should be created for better user experience.
           </section>
 
           <section id="prototyping">
-            <h3>Usability test and prototyping</h3>
+            <h3>Usability Test and Prototyping</h3>
             <p>
               We carried out amock application and tested the interaction process. Further, we designed the whole ios client of this application.
             </p>
@@ -166,6 +172,39 @@ a qsuedo section should be created for better user experience.
 
           <section id="display">
             <h3>Final Design</h3>
+            <div id="main-slider" class="carousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="container">
+                    <div class="carousel-content">
+                      <img src="{% static 'portfolio/images/projects/ethu/example_1.png' %}"  class="img-responsive" />
+                    </div>
+                  </div>
+                </div>
+                <!--/.item-->
+                <div class="item">
+                  <div class="container">
+                    <div class="carousel-content">
+                      <img src="{% static 'portfolio/images/projects/ethu/example_2.png' %}"  class="img-responsive" />
+                    </div>
+                  </div>
+                </div>
+                <!--/.item-->
+                <div class="item">
+                  <div class="container">
+                    <div class="carousel-content">
+                      <img src="{% static 'portfolio/images/projects/ethu/example_3.png' %}" class="img-responsive" />
+                    </div>
+                  </div>
+                </div>
+                <!--/.item-->
+              </div>
+              <!--/.carousel-inner-->
+              <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+              <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+            </div>
+            <!--/#main-slider-->
+
           </section>
         </div>
       </div>

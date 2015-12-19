@@ -99,12 +99,7 @@ a:focus {
 }
 
 #main-slider {
-    background-image: url(../images/slider-bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding: 200px 0;
+    padding: 20px 0;
     color: #fff;
 }
 
@@ -113,12 +108,7 @@ a:focus {
     -o-transition: opacity ease-in-out 500ms;
     -webkit-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
-    left: 0 !important;
     opacity: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    display: block !important;
     z-index: 1;
     text-align: center;
 }
@@ -135,14 +125,6 @@ a:focus {
     -webkit-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
     z-index: 2;
-}
-
-#main-slider .item.active h1 {
-    -webkit-animation: scaleUp 400ms;
-    -moz-animation: scaleUp 400ms;
-    -o-animation: scaleUp 400ms;
-    -ms-animation: scaleUp 400ms;
-    animation: scaleUp 400ms;
 }
 
 #main-slider .prev,
@@ -168,17 +150,11 @@ a:focus {
 }
 
 #main-slider .prev {
-    left: 10px;
+    left: 20px;
 }
 
 #main-slider .next {
     right: 10px;
-}
-
-#main-slider h1 {
-    font-size: 68px;
-    text-shadow: 0 3px rgba(0, 0, 0, 0.1);
-    color: #fff;
 }
 
 #contact {
@@ -334,6 +310,23 @@ a:focus {
     height: 100%;
     display: inline-block;
     padding: 20px 10px;
+}
+
+.portfolio-item .preview .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.portfolio-item .preview .hover:hover {
+    opacity: 1;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    transition: opacity 300ms;
 }
 
 .overlay .preview span {
