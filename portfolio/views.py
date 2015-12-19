@@ -54,8 +54,8 @@ def signup(request):
     return render_to_response('portfolio/login.html', {'form': user_form}, context)
 
 
-def project1(request):
-    return render(request, 'portfolio/project_detail.html')
+def project_ethu(request):
+    return render(request, 'portfolio/project_ethu.html')
 
 
 def research1(request):

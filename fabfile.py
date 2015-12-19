@@ -24,3 +24,9 @@ def deploy():
 
     # Restart the nginx server
     sudo('service apache2 restart')
+
+
+@hosts(['yutianxin.me'])
+def shutdown():
+    sudo('shutdown now')
+
