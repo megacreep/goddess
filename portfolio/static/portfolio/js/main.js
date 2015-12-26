@@ -31,10 +31,10 @@ jQuery(function ($) {
     });
 
     $(function () {
-        $('#main-slider.carousel').carousel({
-            interval: 10000,
-            pause: false
-        });
+//        $('#main-slider.carousel').carousel({
+//            interval: 10000,
+//            pause: false
+//        });
         $('body').scrollspy({target: '.nav-container'});
     });
 
@@ -48,13 +48,13 @@ jQuery(function ($) {
         return false;
     });
 
-    $('.research-item[data-href]').each(function () {
-        var href = $(this).attr("data-href")
-        $(this).find("span, img").each(function() {
-            var anchor = $(this).after('<a href="' + href + '"></a>').next();
-            $(this).detach().appendTo(anchor);
-        });
-    });
+//    $('.research-item[data-href]').each(function () {
+//        var href = $(this).attr("data-href")
+//        $(this).find("span, img").each(function() {
+//            var anchor = $(this).after('<a href="' + href + '"></a>').next();
+//            $(this).detach().appendTo(anchor);
+//        });
+//    });
 
     //smooth scroll
     $('.navbar-nav > li > a[href^="#"]').click(function (event) {
