@@ -8,22 +8,27 @@
     <div class="box last">
       <div class="row">
         <div class="col-sm-6">
-          <h1>Contact Form</h1>
+          {% if error_message %}
+          <div class="status alert alert-danger">{{ error_message }}</div>
+          {% endif %}
 
-          <p>You can send email to me using the following form.</p>
+          {% if success_message %}
+          <div class="status alert alert-info">{{ success_message }}</div>
+          {% endif %}
 
-          <div class="status alert alert-success" style="display: none"></div>
-          <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php"
-                role="form">
+          {# The email sending does not function right now #}
+          <form id="main-contact-form" class="contact-form" name="contact-form"
+                method="POST" action="{% url 'portfolio:send_email'%}" role="form">
+            {% csrf_token %}
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" required="required" placeholder="Name">
+                  <input id="sender_name" type="text" class="form-control" required="required" placeholder="Name">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" required="required" placeholder="Email address">
+                  <input id="email" type="text" class="form-control" required="required" placeholder="Email address">
                 </div>
               </div>
             </div>
@@ -42,42 +47,10 @@
         </div>
         <!--/.col-sm-6-->
         <div class="col-sm-6">
-          <h1>My Address</h1>
-
-          <div class="row">
-            <div class="col-md-6">
-              <address>
-                <strong>Tsinghua University</strong><br>
-                Building #31, Room XXX<br>
-                Tsinghua University, Beijing, China<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-              </address>
-            </div>
-            <div class="col-md-6">
-              <address>
-                <strong>Another Address</strong><br>
-                795 Folsom Ave, Suite 600<br>
-                San Francisco, CA 94107<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-              </address>
-            </div>
-          </div>
-          <h1>Connect with me</h1>
-
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="social">
-                <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
-                <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
-                <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="social">
-                <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
-              </ul>
+          <div class="map_container">
+            <div id="map_canvas" class="map_canvas">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.980734847251!2d116.32617557354872!3d40.00887789505309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f0542727d24205%3A0xfa956bc6734daf06!2sBuilding+No.31!5e0!3m2!1sen!2sus!4v1449386493948"
+                     width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
