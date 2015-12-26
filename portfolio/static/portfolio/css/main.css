@@ -113,6 +113,10 @@ a:focus {
     text-align: center;
 }
 
+#main-slider .item img{
+    width: 100%;
+}
+
 #main-slider .item:first-child {
     top: auto;
     position: relative;
@@ -134,7 +138,7 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     display: inline-block;
-    margin-top: -50px;
+    margin-top: -25px;
     font-size: 24px;
     height: 50px;
     width: 50px;
@@ -150,11 +154,11 @@ a:focus {
 }
 
 #main-slider .prev {
-    left: 20px;
+    left: 0px;
 }
 
 #main-slider .next {
-    right: 10px;
+    right: 0px;
 }
 
 #contact {
@@ -880,4 +884,24 @@ textarea#message {
 
 .doc-img {
     padding: 10px;
+}
+
+#project_detail #content {
+    line-height: 28px;
+}
+
+.outline {
+    border: 1px solid #aaaaaa;
+    margin: 20px 0px;
+    padding: 20px 10px;
+}
+
+.outline strong {
+    padding-right: 7px;
+}
+
+@media screen and (max-width: 960px) {
+    #project_nav {
+        display: none;
+    }
 }
