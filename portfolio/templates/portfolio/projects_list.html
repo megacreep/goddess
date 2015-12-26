@@ -19,7 +19,7 @@ All of these pages should implement the project_detail block.
   <section id="projects_list">
     <div class="container">
       <div class="box">
-        <ul class="portfolio-items col-3">  {# The col-* class defines how many columns should be used for portfolio items #}
+        <ul class="portfolio-items col-2">  {# The col-* class defines how many columns should be used for portfolio items #}
           <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
@@ -33,78 +33,42 @@ All of these pages should implement the project_detail block.
             </div>
           </li>
           <!--/.portfolio-item-->
-          <li class="portfolio-item joomla bootstrap">
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item2.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% static 'portfolio/images/portfolio/full/item2.jpg' %}">
-                  </a>
-                </div>
+                <a class="preview" href="{% url 'portfolio:projects_learnpar' %}">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover_hover.png' %}" class="hover" alt="">
+                </a>
               </div>
-              <h5>Lorem ipsum dolor sit amet</h5>
+              <h5>LearnPar</h5>
             </div>
           </li>
           <!--/.portfolio-item-->
-          <li class="portfolio-item bootstrap wordpress">
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item3.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% static 'portfolio/images/portfolio/full/item3.jpg' %}">
-                  </a>
-                </div>
+                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
+                </a>
               </div>
-              <h5>Lorem ipsum dolor sit amet</h5>
+              <h5>TreeMe</h5>
             </div>
           </li>
           <!--/.portfolio-item-->
-          <li class="portfolio-item joomla wordpress apps">
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item4.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% static 'portfolio/images/portfolio/full/item4.jpg' %}">
-                  </a>
-                </div>
+                <a class="preview" href="{% url 'portfolio:projects_cmf' %}">
+                  <img src="{% static 'portfolio/images/projects/cmf/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/cmf/cover_hover.png' %}" class="hover" alt="">
+                </a>
               </div>
-              <h5>Lorem ipsum dolor sit amet</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item joomla html">
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item5.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% static 'portfolio/images/portfolio/full/item5.jpg' %}">
-                  </a>
-                </div>
-              </div>
-              <h5>Lorem ipsum dolor sit amet</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item wordpress html">
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <img src="{% static 'portfolio/images/portfolio/thumb/item6.jpg' %}" alt="">
-
-                <div class="overlay">
-                  <a class="preview" title="Lorem ipsum dolor sit amet"
-                     href="{% static 'portfolio/images/portfolio/full/item6.jpg' %}">
-                  </a>
-                </div>
-              </div>
-              <h5>Lorem ipsum dolor sit amet</h5>
+              <h5>CMF research tool</h5>
             </div>
           </li>
         </ul>

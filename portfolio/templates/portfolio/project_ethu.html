@@ -21,16 +21,10 @@ a qsuedo section should be created for better user experience.
           <div class="nav-container">
             <ul class="nav nav-pills nav-stacked nav-box">
               <li class="back"><a href="{% url 'portfolio:projects' %}">Back to Projects</a></li>
-              <li class="active"><a href="#summary">Summary</a></li>
-              <li><a href="#background">Background</a></li>
-              <li><a href="#goal">Priority Goal</a></li>
-              <li><a href="#overview">Project Overview</a></li>
+              <li class="active"><a href="#summary">Background</a></li>
               <li><a href="#methodology">Methodology and Approach</a></li>
-              <li><a href="#model">Behavior Model</a></li>
-              <li><a href="#opportunity">Opportunity Field</a></li>
               <li><a href="#develop">Development</a></li>
               <li><a href="#solution">Solution</a></li>
-              <li><a href="#prototyping">Usability Test and Prototyping</a></li>
               <li><a href="#display">Final Design</a></li></ul>
           </div>
         </div>
@@ -64,78 +58,88 @@ a qsuedo section should be created for better user experience.
             <img class="img-responsive doc-img" src="{% static 'portfolio/images/projects/ethu/cover.png' %}" />
           </section>
 
+          <hr />
           <section id="background">
-            <h3>Background</h3>
-            <ul>
-              <li>Challenges in campus life service</li>
-            </ul>
-
-            <p>
-              Campus life in Tsinghua University（THU） is exciting yet somehow frustrating. The library is always full during the examination week, whilst the 20G monthly free Internet data flow is always used up before the end of each month. Further, Internet speed is always slow during the night. However, many resources are actually available but not be properly used, so in order to improve students’ daily study experiences, a niche service system needed to be developed. Such a service would act to reallocate the resources and redesign the customer habits.
-            </p>
-          </section>
-
-          <section id="goal">
-            <h3>Priority Goal</h3>
-            <ul>
-              <li>Our objectives in this service design project</li>
-            </ul>
-            <p>
-              The priority goal of this project was to define a model that would interpret student behaviors of resource utilization, in addition to the factors affecting such behavior.
-            </p>
-            <p>The main field of opportunity that was identified in the project was Internet utilization efficiency. Therefore the secondary goal was to develop an innovative internet service to improve internet utilization, taking into consideration experiences of students within campus life including collaborative learning, resource downloading and sharing, as well as the backstage experiences and processes for the data administrator and infrastructure maintainers.
-            </p>
-          </section>
-
-          <section id="overview">
-            <h3>Project Overview</h3>
-            <ul>
-              <li>What is the 4D stages?</li>
-              <li>What did we do in each stage?</li>
-            </ul>
-
-            <p>
-              We adopt a 4D (Discover, Define, Develop and Deliver) service design frame to organize the whole project. In the Discover and Define stages, we conducted studies  to build student behavior model and found opportunity field. In the Develop and Deliver stages, we use service design method as a persona, Stake holder map, System map and custom journey map to find touch points, designing and delivering solutions.
-            </p>
-            <img src="{% static 'portfolio/images/projects/ethu/review.png' %}" class="img-responsive" />
-          </section>
-
-          <section id="methodology">
-            <h3>Methodology and Approach</h3>
-            <ul>
-              <li>Service design methods were used during the research and develop phrases</li>
-            </ul>
-            <p>
-              In the <strong>research process</strong>, we used structured questionnaires,  interviews and observations to obtain first hand information. We gathered a wide range of information on students’ workday and weekend schedules, important agendas, one-day scenarios and comments(problems and complaints). We also investigated the usage ratio of public resources (such as internet and library, study room) during different time points. Based on these results, we concluded a behavioral model of resource usage among student. Furthermore, we found an opportunity field for the service design project: Internet utilization.
-            </p>
-            <p>In the <strong>development process</strong>, in depth interviews, expert interviews, brain-storming and focus groups were used to bring up ideas. We used service design methods to find solutions to specific issues via this research.
-            </p>
-          </section>
-
-          <section id="model">
-            <h3>Behavior Model</h3>
-            <p>
-              in our behavior model, a student’s behavior to use resources is affected by different factors. We classified these factors into: subjective factors, objective factors and external factors.
+            <h2>Background</h2>
+            <section>
+              <h3>Background</h3>
               <ul>
-                <li>The subjective factors refer to personal preference such as familiarity, meaning people usually go to a place or choose to use resources that they are familiar with.</li>
-                <li>The objective factors are obligations, such as the course requirements. For example, if students are required to do a group project they may be more likely to use the discussion room more often.
-                </li>
-                <li>The external factors are the factors that would moderate students’ behavior aside from the objective and subjective factors. For example, asymmetrical information accessibility, which refers to some students inability to recognize or use existing services. For example,Ipv6 services is much more stable and faster inside campus than the Ipv4 service, but only a few students know it and could use it properly.
-                </li>
+                <li>Challenges in campus life service</li>
               </ul>
-            </p>
-            <img src="{% static 'portfolio/images/projects/ethu/discover.png' %}" class="img-responsive" />
+
+              <p>
+                Campus life in Tsinghua University（THU） is exciting yet somehow frustrating. The library is always full during the examination week, whilst the 20G monthly free Internet data flow is always used up before the end of each month. Further, Internet speed is always slow during the night. However, many resources are actually available but not be properly used, so in order to improve students’ daily study experiences, a niche service system needed to be developed. Such a service would act to reallocate the resources and redesign the customer habits.
+              </p>
+            </section>
+
+            <section id="goal">
+              <h3>Priority Goal</h3>
+              <ul>
+                <li>Our objectives in this service design project</li>
+              </ul>
+              <p>
+                The priority goal of this project was to define a model that would interpret student behaviors of resource utilization, in addition to the factors affecting such behavior.
+              </p>
+              <p>The main field of opportunity that was identified in the project was Internet utilization efficiency. Therefore the secondary goal was to develop an innovative internet service to improve internet utilization, taking into consideration experiences of students within campus life including collaborative learning, resource downloading and sharing, as well as the backstage experiences and processes for the data administrator and infrastructure maintainers.
+              </p>
+            </section>
+
+            <section id="overview">
+              <h3>Project Overview</h3>
+              <ul>
+                <li>What is the 4D stages?</li>
+                <li>What did we do in each stage?</li>
+              </ul>
+
+              <p>
+                We adopt a 4D (Discover, Define, Develop and Deliver) service design frame to organize the whole project. In the Discover and Define stages, we conducted studies  to build student behavior model and found opportunity field. In the Develop and Deliver stages, we use service design method as a persona, Stake holder map, System map and custom journey map to find touch points, designing and delivering solutions.
+              </p>
+              <img src="{% static 'portfolio/images/projects/ethu/review.png' %}" class="img-responsive" />
+            </section>
+
           </section>
 
-          <section id="opportunity">
-            <h3>Opportunity Field</h3>
-            <p>We evaluated all the student needs and categorized them according to  importance and the previous solutions. We focused on Internet utilization, which is largely required among the student body but has many unsolved problems.
-            </p>
-            <img src="{% static 'portfolio/images/projects/ethu/opportunity.png' %}" class="img-responsive" />
+          <hr />
+          <section id="methodology">
+            <h2>Methodology and Approach</h2>
+            <section>
+              <h3>Research Method</h3>
+              <ul>
+                <li>Service design methods were used during the research and develop phrases</li>
+              </ul>
+              <p>
+                In the <strong>research process</strong>, we used structured questionnaires,  interviews and observations to obtain first hand information. We gathered a wide range of information on students’ workday and weekend schedules, important agendas, one-day scenarios and comments(problems and complaints). We also investigated the usage ratio of public resources (such as internet and library, study room) during different time points. Based on these results, we concluded a behavioral model of resource usage among student. Furthermore, we found an opportunity field for the service design project: Internet utilization.
+              </p>
+              <p>In the <strong>development process</strong>, in depth interviews, expert interviews, brain-storming and focus groups were used to bring up ideas. We used service design methods to find solutions to specific issues via this research.
+              </p>
+            </section>
+
+            <section id="model">
+              <h3>Behavior Model</h3>
+              <p>
+                in our behavior model, a student’s behavior to use resources is affected by different factors. We classified these factors into: subjective factors, objective factors and external factors.
+                <ul>
+                  <li>The subjective factors refer to personal preference such as familiarity, meaning people usually go to a place or choose to use resources that they are familiar with.</li>
+                  <li>The objective factors are obligations, such as the course requirements. For example, if students are required to do a group project they may be more likely to use the discussion room more often.
+                  </li>
+                  <li>The external factors are the factors that would moderate students’ behavior aside from the objective and subjective factors. For example, asymmetrical information accessibility, which refers to some students inability to recognize or use existing services. For example,Ipv6 services is much more stable and faster inside campus than the Ipv4 service, but only a few students know it and could use it properly.
+                  </li>
+                </ul>
+              </p>
+              <img src="{% static 'portfolio/images/projects/ethu/discover.png' %}" class="img-responsive" />
+            </section>
+
+            <section id="opportunity">
+              <h3>Opportunity Field</h3>
+              <p>We evaluated all the student needs and categorized them according to  importance and the previous solutions. We focused on Internet utilization, which is largely required among the student body but has many unsolved problems.
+              </p>
+              <img src="{% static 'portfolio/images/projects/ethu/opportunity.png' %}" class="img-responsive" />
+            </section>
           </section>
 
+          <hr />
           <section id="develop">
-            <h3>Development</h3>
+            <h2>Development</h2>
             <p>To better illustrate the behavior patterns and demands of users, we used two personas, showing their typical one day events. Stakeholder and system maps were used to analysis and illustrate the resource allocation, in addition to the relationship between stakeholders as well as back stage administration.
               <ul>
                 <li>User: we collected “typical day schedules” from a variety of students. The two personas are representations of these students. We especially interested in their priority set, on- line activities and the internet flow usage according to each of their activities.
@@ -151,41 +155,46 @@ a qsuedo section should be created for better user experience.
             <img src="{% static 'portfolio/images/projects/ethu/develop.png' %}" class="img-responsive" />
           </section>
 
+          <hr/>
+
           <section id="solution">
-            <h3>Solution</h3>
-            <h4>Important Facts：</h4>
-            <p>
-              <ul>
-                <li>Internet is one of the most important aspects in students’ life. Students  need to obtain and share information on a collabrative platform.(objective and subjective factors)</li>
-                <li>Students have different priorities, whilst most students have preference to use internet services for downloading large files in the evening. This resulted in internet cogestion. (subjective factors)</li>
-                <li>Students will not always follow their order of priorities and therefore do not utilize the internet effectively. (subjective factors)</li>
-                <li>Students will change their behavior in relation to service costs. (money and time)</li>
-                <li>School provides a very good Intra-network service but only a few people use it. (external factor)</li>
-              </ul>
-              The solution is aiming to use external factors to solve problems first, which will not affect students’ preference and their demands. Futher, if the resources could not meet the needs of everyone, we would moderate towards students’ behavior based on subjective factors.
-              <img src="{% static 'portfolio/images/projects/ethu/solution.png' %}" class="img-responsive" />
-            </p>
-            <h4>Solutions:</h4>
-            <p>
-              <ul>
-                <li>A foolproof on-line platform for campus students.</li>
-                <li>Provide sharing, storage and collabrative working for students based on Intra-Networking. (external factor based sulotion)</li>
-                <li>Adaptive internet pricing system. Provide automatic downloading assitant, which  can help you download low priority files during leisure time.  (subjective factor based solution)</li>
-                <li>Four more specific function modules （see pic）</li>
-                <li>Front stage experience and back stage administration （see pic）</li>
-              </ul>
-            <img src="{% static 'portfolio/images/projects/ethu/delivery.png' %}" class="img-responsive" />
-            </p>
+            <h2>Solution</h2>
+            <section>
+              <h3>Important Facts：</h3>
+              <p>
+                <ul>
+                  <li>Internet is one of the most important aspects in students’ life. Students  need to obtain and share information on a collabrative platform.(objective and subjective factors)</li>
+                  <li>Students have different priorities, whilst most students have preference to use internet services for downloading large files in the evening. This resulted in internet cogestion. (subjective factors)</li>
+                  <li>Students will not always follow their order of priorities and therefore do not utilize the internet effectively. (subjective factors)</li>
+                  <li>Students will change their behavior in relation to service costs. (money and time)</li>
+                  <li>School provides a very good Intra-network service but only a few people use it. (external factor)</li>
+                </ul>
+                The solution is aiming to use external factors to solve problems first, which will not affect students’ preference and their demands. Futher, if the resources could not meet the needs of everyone, we would moderate towards students’ behavior based on subjective factors.
+                <img src="{% static 'portfolio/images/projects/ethu/solution.png' %}" class="img-responsive" />
+              </p>
+              <h3>Solutions:</h3>
+              <p>
+                <ul>
+                  <li>A foolproof on-line platform for campus students.</li>
+                  <li>Provide sharing, storage and collabrative working for students based on Intra-Networking. (external factor based sulotion)</li>
+                  <li>Adaptive internet pricing system. Provide automatic downloading assitant, which  can help you download low priority files during leisure time.  (subjective factor based solution)</li>
+                  <li>Four more specific function modules （see pic）</li>
+                  <li>Front stage experience and back stage administration （see pic）</li>
+                </ul>
+              <img src="{% static 'portfolio/images/projects/ethu/delivery.png' %}" class="img-responsive" />
+              </p>
+            </section>
+
+            <section id="prototyping">
+              <h3>Usability Test and Prototyping</h3>
+              <p>
+                We carried out amock application and tested the interaction process. Further, we designed the whole ios client of this application.
+              </p>
+              <img src="{% static 'portfolio/images/projects/ethu/final.png' %}" class="img-responsive" />
+            </section>
           </section>
 
-          <section id="prototyping">
-            <h3>Usability Test and Prototyping</h3>
-            <p>
-              We carried out amock application and tested the interaction process. Further, we designed the whole ios client of this application.
-            </p>
-            <img src="{% static 'portfolio/images/projects/ethu/final.png' %}" class="img-responsive" />
-          </section>
-
+          <hr />
           <section id="display">
             <h3>Final Design</h3>
             <div id="main-slider" class="carousel">

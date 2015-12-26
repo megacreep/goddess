@@ -53,8 +53,21 @@ def signup(request):
         user_form = UserCreationForm()
     return render_to_response('portfolio/login.html', {'form': user_form}, context)
 
+
 def project_ethu(request):
     return render(request, 'portfolio/project_ethu.html')
+
+
+def project_learnpar(request):
+    return render(request, 'portfolio/project_learnpar.html')
+
+
+def project_treeme(request):
+    return render(request, 'portfolio/project_treeme.html')
+
+
+def project_cmf(request):
+    return render(request, 'portfolio/project_cmf.html')
 
 
 def research1(request):

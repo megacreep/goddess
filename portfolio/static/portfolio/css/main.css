@@ -269,7 +269,7 @@ a:focus {
 }
 
 .portfolio-item .item-inner {
-    margin: 0 20px 20px 0;
+    margin: 0 80px 50px;
     text-align: center;
     background: #fff;
     padding: 10px;
@@ -868,6 +868,7 @@ textarea#message {
     width: 100%;
     padding-bottom: 75%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
 }
+
 .map_container .map_canvas{
     position: absolute;
     top: 0;
@@ -886,8 +887,17 @@ textarea#message {
     padding: 10px;
 }
 
+#project_detail .container{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd
+}
+
 #project_detail #content {
     line-height: 28px;
+}
+
+#project_detail #content p {
+    text-indent: 20px;
 }
 
 .outline {
