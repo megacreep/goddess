@@ -20,7 +20,11 @@ a qsuedo section should be created for better user experience.
         <div id="project_nav" class="col-sm-3">
           <div class="nav-container">
             <ul class="nav nav-pills nav-stacked nav-box">
-              <li class="back"><a href="{% url 'portfolio:projects' %}">Back to Projects</a></li>
+	      <li class="back">
+     		<a href="{% url 'portfolio:projects' %}">
+		  <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; Back to Projects
+		</a>
+	      </li>
               <li class="active"><a href="#summary">Background</a></li>
               <li><a href="#methodology">Methodology and Approach</a></li>
               <li><a href="#develop">Development</a></li>
@@ -60,9 +64,9 @@ a qsuedo section should be created for better user experience.
 
           <hr />
           <section id="background">
-            <h2>Background</h2>
+            <h3>Background</h3>
             <section>
-              <h3>Background</h3>
+              <h4>Background</h4>
               <ul>
                 <li>Challenges in campus life service</li>
               </ul>

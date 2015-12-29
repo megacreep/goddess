@@ -4,7 +4,7 @@ html {
 
 body {
     background: #ffffff;
-    color: #999;
+    color: #777;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,7 +19,8 @@ h6 {
 }
 
 a {
-    color: #52b6ec;
+    /*color: #52b6ec;*/
+    color: #aaa;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -o-transition: 300ms;
@@ -101,6 +102,7 @@ a:focus {
 .slider {
     padding: 20px 0;
     color: #fff;
+    float: right;
 }
 
 .slider .item {
@@ -269,7 +271,7 @@ a:focus {
 }
 
 .portfolio-item .item-inner {
-    margin: 0 80px 50px;
+    margin: 0 50px 50px;
     text-align: center;
     background: #fff;
     padding: 10px;
@@ -675,6 +677,27 @@ a:focus {
     border-radius: 5px;
 }
 
+.nav-pills > li.active > a,
+.nav-pills > li.active:focus > a,
+.nav-pills > li.active:hover > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active:focus > a:focus,
+.nav-pills > li.active:hover > a:focus {
+    background-color: white;
+    color: #333;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.nav-pills > li:hover > a,
+.nav-pills > li:focus > a,
+.nav-pills > li:hover > a:focus,
+.nav-pills > li:focus > a:focus {
+    background-color: white;
+    font-size: 18px;
+    color: #aaa
+}
+
 .icon-lg {
     font-size: 48px;
     height: 108px;
@@ -902,6 +925,7 @@ textarea#message {
 
 .outline {
     border: 1px solid #aaaaaa;
+    border-style: solid none;
     margin: 20px 0px;
     padding: 20px 10px;
 }
@@ -914,4 +938,7 @@ textarea#message {
     #project_nav {
         display: none;
     }
+}
+#content img {
+    margin: 0 auto;
 }
