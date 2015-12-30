@@ -103,7 +103,6 @@ jQuery(function ($) {
             $(".nav-container").height(content.height());
         }
         $(document).scroll(function () {
-            $('#position').text($(document).scrollTop() + " " + projects.offset().top);
             if (sideBar.offset().top + sideBar.height() > projects.offset().top) {
                 sideBar.css({position: 'absolute', bottom: 0, top: "auto"});
             } else if (sideBar.offset().top - $(document).scrollTop() > 100) {
