@@ -12,73 +12,8 @@ All of these pages should implement the project_detail block.
 {% block content %}
 
 <section id="projects">
-
   {% block project_detail %}
   {% endblock %}
-
-  <section id="projects_list">
-    <div class="container">
-      <div class="box">
-        <ul class="portfolio-items col-4">  {# The col-* class defines how many columns should be used for portfolio items #}
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
-                  <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>E-THU</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_learnpar' %}">
-                  <img src="{% static 'portfolio/images/projects/learnpar/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/learnpar/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>LearnPar</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>TreeMe</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_cmf' %}">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>CMF research tool</h5>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!--/.box-->
-    </div>
-    <!--/.container-->
-  </section>
-  <!--/#projects-->
-
 </section>
 
 {% endblock %}
