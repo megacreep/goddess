@@ -70,6 +70,10 @@ def project_cmf(request):
     return render(request, 'portfolio/project_cmf.html')
 
 
+def project_tune(request):
+    return render(request, 'portfolio/project_tune.html')
+
+
 def research1(request):
     return render(request, 'portfolio/research1.html')
 

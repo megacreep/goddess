@@ -1,0 +1,88 @@
+{% extends 'portfolio/projects_list.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block project_detail %}
+  <section id="project_detail">
+    <div class="container">
+      <div class="row">
+        <div id="project_nav" class="col-sm-3">
+          <div class="nav-container">
+            <ul class="nav nav-pills nav-stacked nav-box">
+              <li class="back"><a href="{% url 'portfolio:projects' %}">Back to Projects</a></li>
+              <li class="active"><a href="#about">Introduction</a></li>
+              <li><a href="#challenges">Challenges</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#vision">Vision</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="content" class="col-sm-9">
+          <section id="abstract">
+            <h1>Tune</h1>
+            <div class="outline">
+              <h4> Project information</h4>
+              <div>
+                <ul>
+                  <li><strong>Organization:</strong>Independent project</li>
+                  <li><strong>Time:</strong>2016.1 - </li>
+                  <li><strong>Cooperator:</strong>Beijing School for The Blind</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="about">
+            <h3>Introduction</h3>
+            <p>
+              TUNE is a novel sensorimotor training design for blind children. In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for movement development. Lacking motor training will result in a host of problems in their later life. TUNE is a haptic belt combined with motor exercise games, in which we use accelerate, inertial and geomagnetism sensors to track children's gait, walking direction and body angle information.
+            </p>
+            <img src="{% static 'portfolio/images/projects/tune/child.png' %}" class="img-responsive" />
+            <p>
+              We use sound (for 1.5-8 years old) and haptic feedback (for 5-8years old) to represent correct and incorrect movements. Every step in the right track and direction will generate a different note (audio feedback). The whole task is represented as music tune. There are a few music options for each task, providing choice which can increase the fun element of the exercise as the children ‘walk’ out each song.  When the child is older than 4 years old, every time the child deviates from the track, there will be a vibration feedback from the haptic belt providing directional cues. These real-time feedback signals are more accurate and intuitive than a spoken signal. As the child’s motor ability progresses, they will receive less haptic feedbacks and ‘walk’ out more fluent music tune. Parents and tutors can easily use TUNE with our simple guidance and phone APP. With TUNE,motor exercises for little blind children(1.5-8 years old) could become more accessible, intuitive, effective , inexpensive and fun.
+            </p>
+            <img src="{% static 'portfolio/images/projects/tune/intro.png' %}" class="img-responsive" />
+          </section>
+
+          <hr />
+          <section id="challenges">
+            <h3>Challenges</h3>
+            <p>
+              There were a variety of aspects which posed major challenges to the project: Firstly, in the field of product functional module and user experience design, we found it very hard to ask blind children to actively participate in the motor exercise and training. Most of them are very shy, afraid to walk unaccompanied and quick to lose interest. Regarding technology design, we faced the challenge of finding a technology that can provide real-time motor feedbacks. Additionally, this technology must be cheap, robust and easy to use. In the field of business model design, we faced further challenges. Compared with other physically impaired people such as amputees, the visually impaired tend to have lower socioeconomic status. Consequently, they could not afford expensive products, especially regarding  devices designed to train motor ability, which are over-priced.
+            </p>
+            <p>
+              Sensorimotor exercise and rehabilitation for blind children is like the Wild West in developing countries. On the one hand, we investigated many special education schools and communities in our country and found almost no specific training programs in the field. On the other hand, we found a few research papers focused on this problem but no product in the market.
+            </p>
+            <img src="{% static 'portfolio/images/projects/tune/structure.png' %}" class="img-responsive" />
+          </section>
+
+          <hr />
+          <section id="solutions">
+            <h3>Solutions</h3>
+            <p>
+              We believe that our design is an excellent solution to the challenges listed above. For the functional module and user experience design, we found that music is a great motivation. Blind children are naturally attracted by sound, and congruent sound (music tune) is a strong positive feedback. We hence mapped motion（every step）with sound, generating music as the ABC song while walking. This helped children actively participated in the exercise,  making motor exercise more effective. Also, we considered multiple kinds of feedback that represent errors. Previous research in motor rehabilitation and sensory substitution proved that haptic (tactile) feedback could help people suffering from proprioceptive sensation deficiency and visual impairment. Therefore, it appears that haptic feedback is more effective than human guidance.
+            </p>
+            <p>
+              For the technology design, we tried computer vision, motion capture and pressure sensitive blankets. We finally decided to use smart phones with accelerator, inertial and geomagnetism sensors, which most people owned. All they need to do is download an application and mount their phone on the haptic belt. Total cost will be less than 30 dollars and there is potentially for a cheaper price if the product moves to mass production, leading to wider use in schools, communities and privately at home.
+            </p>
+            <img src="{% static 'portfolio/images/projects/tune/scenario.png' %}" class="img-responsive" />
+
+            <p>
+              We used pervasive technology to tackle an unsolved yet basic problem for the blind. Our team members have different academic backgrounds including industrial design, cognitive science and motor control, computer science and human computer interaction. This solution is scientific based and user-centered. The multi-disciplinary academic background of our team allowed a combination of science, technology and design. Most student designs for the blind focused on specific activities such as eating or dressing. Most company designs for the blind use cutting edge technology and focus on haptic interface，travel assistant design and so on. This design is especially focused on children‘s motor ability training, which is one of the most important basic skills for the blind, and this design could complement other solutions for the blind.
+            </p>
+            <p>
+              This design uses sound and vibration to represent children's motion. Children, especially those with visual limitations, are naturally attracted by sound. Therefore, many blind schools use music as an adjunctive psychological therapy for the blind children. Using music to represent their walking behavior makes the motor training fun and attractive. This method can therefore help blind children to overcome their fear of walking. Also, this design uses haptic feedback to help children correct incorrect motion (deviation from the track) and train their orientation. It could be therefore be more effective and intuitive than the conventional methods.
+            </p>
+            <img src="{% static 'portfolio/images/projects/tune/logo.png' %}" class="img-responsive" />
+          </section>
+          <section id="vision">
+            <h3>Vision</h3>
+            <p>
+              Using technology to help this special population is critical for a healthy society. This design is aimed to tackle basic problems that the visually disadvantaged people are facing. Our initial motive is to help blind children improve their motor ability in their critical development period, thus making their later life easier. It is inexpensive for most institutes or individuals and could be a good complementary product with the classic orientation and mobility training and newly artificial intelligence product for the blind such as Seeing AI.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
