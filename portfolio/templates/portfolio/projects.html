@@ -12,6 +12,18 @@
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+                  <img src="{% static 'portfolio/images/projects/tune/cover.jpg' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/tune/cover_hover.jpg' %}" class="hover" alt="">
+                </a>
+              </div>
+              <h5>TUNE</h5>
+            </div>
+          </li>
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
                 <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
                   <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
                   <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
