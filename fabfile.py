@@ -5,10 +5,10 @@ REPOS = (("https://github.com/megacreep/goddess.git", "origin", "master"),)
 
 env.user = 'ubuntu'
 env.key_filename = ['temp.pem']
-env.hosts = ['yutianxin.me']
+env.hosts = ['yutianxin.com']
 
 
-@hosts(['yutianxin.me'])
+@hosts(['yutianxin.com'])
 def deploy():
     if not exists('/var/www/goddess'):
         run('mkdir -p /var/www/goddess')
@@ -26,7 +26,7 @@ def deploy():
     sudo('service apache2 restart')
 
 
-@hosts(['yutianxin.me'])
+@hosts(['yutianxin.com'])
 def shutdown():
     sudo('shutdown now')
 
