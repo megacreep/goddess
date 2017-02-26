@@ -936,8 +936,12 @@ textarea#message {
 #index .box {
   padding-top: 80px;
   padding-bottom: 80px;
-  min-height: 480px;;
-  height: 480px;
+  min-height: 360px;;
+}
+
+#research .container {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .yellow {
