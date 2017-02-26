@@ -5,7 +5,7 @@ html {
 body {
     background: #ffffff;
     color: #777;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
 }
 
 h1,
@@ -581,7 +581,6 @@ a:focus {
 }
 
 .navbar-default {
-    background: #fff;
     border-style: none;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
@@ -590,10 +589,6 @@ a:focus {
     /*-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
     /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);*/
     overflow: hidden;
-}
-
-.navbar-default a {
-    background: #ffffff;
 }
 
 .navbar-default .first a {
@@ -612,8 +607,9 @@ a:focus {
 .navbar-default .navbar-brand {
     font-size: 24px;
     line-height: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto bold', sans-serif;
     font-weight: bold;
+    color: black;
     /*background: url(../images/logo.png) no-repeat 0 50%;*/
 }
 
@@ -630,15 +626,16 @@ a:focus {
 
 .navbar-default .navbar-collapse {
     text-align: center;
+    background-color: #F3F3F3;
 }
 
 .navbar-default .navbar-nav > li {
-    margin-left: 1px;
+    margin-left: 30px;
     margin-top: 5px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto light', sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #999;
@@ -662,7 +659,7 @@ a:focus {
 .navbar-default .navbar-nav > li.active:hover > a:focus,
 .navbar-default .navbar-nav > li:hover > a:focus,
 .navbar-default .navbar-nav > li:focus > a:focus {
-    background-color: white;
+    background-color: #F3F3F3;
     color: black;
     border-bottom: medium solid #ffc300;
 }
@@ -933,16 +930,18 @@ textarea#message {
 #index .box {
   padding-top: 80px;
   padding-bottom: 80px;
+  min-height: 480px;;
 }
 
 .yellow {
   color: #ffc300;
+  font-family: "Roboto bold", sans-serif;
 }
 
 .img-avatar {
   border: none;
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   float: right;
 }
 
@@ -951,12 +950,19 @@ textarea#message {
   padding: 0px;
 }
 
-section .container {
-  background-color: rgba(242, 242, 242, 0.52);
-}
-
 .slogan {
   margin-top: 50px;
   font-size: 24px;
   text-align: center;
+}
+
+.black-regular {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
