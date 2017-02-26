@@ -5,7 +5,8 @@ html {
 body {
     background: #ffffff;
     color: #777;
-    font-family: 'Roboto Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 h1,
@@ -607,8 +608,8 @@ a:focus {
 .navbar-default .navbar-brand {
     font-size: 24px;
     line-height: 24px;
-    font-family: 'Roboto bold', sans-serif;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     color: black;
     /*background: url(../images/logo.png) no-repeat 0 50%;*/
 }
@@ -635,7 +636,8 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: 'Roboto light', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 18px;
     color: #999;
@@ -935,7 +937,8 @@ textarea#message {
 
 .yellow {
   color: #ffc300;
-  font-family: "Roboto bold", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .img-avatar {
