@@ -70,6 +70,10 @@ def project_cmf(request):
     return render(request, 'portfolio/project_cmf.html')
 
 
+def project_ureveal(request):
+    return render(request, 'portfolio/project_ureveal.html')
+
+
 def project_tune(request):
     return render(request, 'portfolio/project_tune.html')
 

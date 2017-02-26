@@ -9,13 +9,13 @@
       <section class="slogan">
         <div class="row">
           <div class="col-sm-12">
-            <span class="yellow">>></span> I design for good.
+            <span class="yellow">>></span> I Design for Good.
           </div>
         </div>
       </section>
       <div class="box">
-        <ul class="portfolio-items col-3">  {# The col-* class defines how many columns should be used for portfolio items #}
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+        <div class="row">
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
@@ -26,8 +26,8 @@
               </div>
               <h5>TUNE</h5>
             </div>
-          </li>
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+          </div>
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
@@ -38,9 +38,9 @@
               </div>
               <h5>E-THU</h5>
             </div>
-          </li>
+          </div>
           <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
@@ -51,9 +51,9 @@
               </div>
               <h5>LearnPar</h5>
             </div>
-          </li>
+          </div>
           <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
@@ -64,9 +64,9 @@
               </div>
               <h5>TreeMe</h5>
             </div>
-          </li>
+          </div>
           <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
             {# The filters are in projects.html #}
             <div class="item-inner">
               <div class="portfolio-image">
@@ -77,8 +77,20 @@
               </div>
               <h5>CMF research tool</h5>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_ureveal' %}">
+                  <img src="{% static 'portfolio/images/projects/uReveal/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/uReveal/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <h5>User Research for uReveal</h5>
+            </div>
+          </div>
+        </div>
       </div>
       <!--/.box-->
     </div>

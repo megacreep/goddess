@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^projects_learnpar/$', views.project_learnpar, name='projects_learnpar'),
     url(r'^projects_treeme/$', views.project_treeme, name='projects_treeme'),
     url(r'^projects_cmf/$', views.project_cmf, name='projects_cmf'),
+    url(r'^projects_ureveal/$', views.project_ureveal, name='projects_ureveal'),
     url(r'^projects_tune/$', views.project_tune, name='projects_tune'),
     url(r'^research/$', views.research, name='research'),
     url(r'^interests/$', views.interests, name='interests'),

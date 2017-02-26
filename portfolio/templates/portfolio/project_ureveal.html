@@ -1,0 +1,168 @@
+{% extends 'portfolio/projects_list.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% comment %}
+This page is a demo for creating project navigation.
+The page is devided into two part, the left navigation and the right content.
+{% endcomment %}
+
+{% block project_detail %}
+  <section id="project_detail">
+    <div class="container">
+      <div class="row">
+        <div id="project_nav" class="col-sm-3">
+          <div class="nav-container">
+            <ul class="nav nav-pills nav-stacked nav-box">
+	      <li class="back">
+     		<a href="{% url 'portfolio:projects' %}">
+		  <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; Back to Projects
+		</a>
+	      </li>
+              <li class="active"><a href="#summary">Summary</a></li>
+              <li><a href="#background">Background</a></li>
+              <li><a href="#test">Sample Test</a></li>
+              <li><a href="#impact">Implementation and impact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="content" class="col-sm-9">
+          <section id="abstract">
+            <h1>Quantitive evaluation toolbox for CMF Research</h1>
+            <div class="outline">
+              <h4> Project information</h4>
+              <div>
+                <ul>
+                  <li><strong>Organization:</strong>Tsinghua University</li>
+                  <li><strong>Independent work:</strong>Tianxin Yu</li>
+                  <li><strong>Advisor:</strong>Henfeng Zuo</li>
+                  <li><strong>Date:</strong>2014.12</li>
+                  <li><strong>Area:</strong>Sensory perception, Interior design, CMF</li>
+                  <li><strong>Tags:</strong>user experience</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="summary">
+            <h3>Why?</h3>
+            <ul>
+              <li>Why did I initiate this project?</li>
+            </ul>
+            <p>
+              When I first stepped into the design field, I was so excited to learn new methodologies and tried to combine my psychological background with design-based thinking.  My interests were especially strong towards researching the reliability of a variety of user study methods, such as questionnaires or evaluation. This toolbox was designed to use basic psychological methodology such as psychological scaling and experimental design, for example as a random control to improve the reliability of quantitative user studies. This will automatically upload test materials, generate experiments and interpret data. The result can subsequently be used by an independent designer or company.
+            </p>
+            <p>
+              This design work is aiming to find a way using automatic service rather than manpower to help students with psychological intervention.
+            </p>
+            <img src="{% static 'portfolio/images/projects/cmf/motivation.png' %}" class="img-responsive" />
+          </section>
+
+          <hr />
+          <section id="background">
+            <h3>Background</h3>
+            <p>
+              Color, Materials, Finish (CMF) is an area of industrial design that focuses on the chromatic, tactile and decorative identity of products and environments. Designers and researchers in CMF field are interested how color, materials and finish will affect the user experience of products. Both quantitive and quliative methods are used to explore this question.
+            </p>
+            <p>
+              However, in many quantitive studies in this field, factors that could have a direct impact on the result were ignored, such as the location effect, which means that the present order will affect the experiment results. This effect is evident in color perception, but could be controlled by experiment design. So I wrote  an integrated test interface with three experiments, focusing on color, material perception and their association with emotion. These tests have been used to evaluate color- emotional correspondence and material perception. The experimental results have been used in the CMF database and user experience design for Boeing China.
+            </p>
+            <p>
+              Currently, the project is written in Matlab and on-line version will be developed in the next year. More tests including social implicit tests will be added into this toolbox next year;) Included are the Matlab codes, please feel free to use.
+            </p>
+
+            <img src="{% static 'portfolio/images/projects/cmf/background.png' %}" class="img-responsive" />
+          </section>
+
+          <hr />
+          <section id="test">
+            <h3>Sample Test</h3>
+            <div>
+              <h5>Material-test</h5>
+              <p>
+                In this test, we focused on the user experience of different materials and finish techniques. Here we define user experiences as 1) the perception of physical attributes and 2) emotional feelings. Each material sample  is evaluated according to 10 physical attributes and 10 emotions.
+              </p>
+              <p>
+                For each physical attribute, we provide six references which represent different degrees （degree 1，3，5，7，9, 11 in a Likert scale）. All the participants is  allocated a value from 1 to 11 using comparisons of the testing material and these references.
+              </p>
+              <p>
+                For emotional evaluations, participants should allocate a value from 1 to 11 to each item.
+              </p>
+              <img src="{% static 'portfolio/images/projects/cmf/material.png' %}" class="img-responsive" />
+            </div>
+            <div>
+              <h5>Test 2 Color-Emotion</h5>
+              <p>
+                This test is aiming to evaluate color-emotion correspondence.
+              </p>
+              <p>
+                25 color cues were chosen from the NCS (Natural color system), each cue with4 colors with different lightness and saturation levels. All of the colors were presented on a grey background in a random order.  Subjects were selected to assess the valence and arousal of each color.
+              </p>
+              <img src="{% static 'portfolio/images/projects/cmf/color.png' %}" class="img-responsive" />
+            </div>
+          </section>
+
+          <hr />
+          <section id="impact">
+            <h3>Implementation and impact</h3>
+            <p>
+              The CMF user experience toolbox has been utilized by the CMF database. More than 200 materials have been evaluated by at least 15 participants, whilst100 colors have been evaluated by 60 participants. The CMF database will be available on-line in early 2016. Furthermore, some results were used by 3 clients for interior design including  Boeing China.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="projects_list">
+    <div class="container">
+      <div class="box">
+        <h4><strong>Other projects:</strong></h4>
+        <ul class="portfolio-items col-3">  {# The col-* class defines how many columns should be used for portfolio items #}
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <h5>E-THU</h5>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_learnpar' %}">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <h5>LearnPar</h5>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <h5>TreeMe</h5>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+        </ul>
+      </div>
+      <!--/.box-->
+    </div>
+    <!--/.container-->
+  </section>
+ 
+{% endblock %}
