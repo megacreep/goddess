@@ -26,7 +26,7 @@ SECRET_KEY = '=3=ue7fd7bov94vn8c+#efpzznknst%i^#_ts7+t9t#o0(t7qm'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
 
-ALLOWED_HOSTS = ['yutianxin.me',]
+ALLOWED_HOSTS = ['yutianxin.com', 'localhost', '35.185.221.68']
 
 # Application definition
 

@@ -16,14 +16,15 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
+from portfolio.views import index, signup
 
 urlpatterns = [
-    url(r'^$', 'portfolio.views.index', name='index'),
+    url(r'^$', index, name='index'),
     url(r'^polls/', include('polls.urls', namespace='polls')),
     url(r'^portfolio/', include('portfolio.urls', namespace='portfolio')),
     url(r'^admin/', include(admin.site.urls)),
     # copied from django contrib auth urls
-    url(r'^signup/$', 'portfolio.views.signup', name='signup'),
+    url(r'^signup/$', signup, name='signup'),
     url(r'^login/$', auth_views.login, {'template_name': 'portfolio/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/portfolio/'}, name='logout'),
     url(r'^password_change/$', auth_views.password_change, name='password_change'),
