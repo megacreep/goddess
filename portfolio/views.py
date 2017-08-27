@@ -48,7 +48,7 @@ def signup(request):
             login(request, user)
             return HttpResponseRedirect('/')
         else:
-            print user_form.error_messages
+            print(user_form.error_messages)
     else:
         user_form = UserCreationForm()
     return render_to_response('portfolio/login.html', {'form': user_form}, context)

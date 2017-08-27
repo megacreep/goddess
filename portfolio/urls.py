@@ -22,3 +22,6 @@ urlpatterns = [
     url(r'^research2/$', views.research2, name="research2"),
     url(r'^send_email/$', views.send_email, name="send_email"),
 ]
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+urlpatterns += staticfiles_urlpatterns()

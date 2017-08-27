@@ -5,24 +5,31 @@
 <section id="index">
   <div class="container">
     <div class="box">
-      <div class="row" style="height:80px">
-        <div class="col-sm-3 col-sm-offset-1">
-          <img class="img-avatar"
-            src="{% static 'portfolio/images/avatar.png' %}" alt="">
-        </div>
-        <div class="col-sm-5 vertical-center">
-          <h4 class="black-regular">Hi, I'm Tianxin.</h4>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 intro">
+          <div class="hello">
+            Hi, I am Tianxin Yu,
+          </div>
+          <div>
+              An UX Researcher and designer with multidisplinary background in cognitive science and product design. I just graduated from Human Computer Interaction Institue at Carnegie Mellon University.
+          </div>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-4">
-          <div class="intro">
-            <p>
-              <span class="yellow">>> </span>
-              I am an user experience researcher and designer with Cognitive Sciennce and Design background.
-              I am currently a master student at Carnegie Mellon University, Human-Computer Interaction Institute.
-              Learn more about me in my <a href="{% static 'portfolio/files/CV.pdf' %}" class="yellow" style="font-weight:bold;">resume</a>.
-            </p>
+        <div class="col-sm-6 col-sm-offset-3 navbar">
+          <div class="container">
+            <div id="navbar" class="navbar navbar-default">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav">
+                  <li><a href="{% url 'portfolio:index' %}">About</a></li>
+                  <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+                  <li><a href="{% url 'portfolio:research' %}">Research</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -30,6 +37,122 @@
   <!--/.box-->
   </div>
   <!--/.container-->
+</section>
+
+<section id="selected_projects" class="grey_container">
+  <div class="container">
+    <div class="row">
+      <div class="section_title col-sm-3">
+        SELECTED PROJECTS
+      </div>
+    </div>
+
+      <div class="box col-sm-offset-1 col-sm-10">
+        <div class="row">
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+                  <img src="{% static 'portfolio/images/projects/tune/cover.jpg' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/tune/cover_hover.jpg' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider green" ></div>
+              <h5>EMPOWER TEACHERS WITH DATA</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider yellow" ></div>
+              <h5>E-THU</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_learnpar' %}">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/learnpar/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider blue" ></div>
+              <h5>LearnPar</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider teal" ></div>
+              <h5>TreeMe</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_cmf' %}">
+                  <img src="{% static 'portfolio/images/projects/cmf/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/cmf/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider yellow_2" ></div>
+              <h5>CMF research tool</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item apps col-md-4 col-sm-6 col-xs-12" style="display:none;"> {# all the css classes other than portfolio-item are used for filtering #}
+            {# The filters are in projects.html #}
+            <div class="item-inner">
+              <div class="portfolio-image">
+                <a class="preview" href="{% url 'portfolio:projects_ureveal' %}">
+                  <img src="{% static 'portfolio/images/projects/uReveal/cover.png' %}" alt="">
+                  <img src="{% static 'portfolio/images/projects/uReveal/cover_hover.png' %}" class="hover" alt="">
+                </a>
+              </div>
+              <div class="divider green" ></div>
+              <h5>User Research for uReveal</h5>
+              <p>
+              UX Research &amp; Design | Learning Design | CUI
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.box-->
+  </div>
+
 </section>
 <!--/#about-->
 {% endblock %}
