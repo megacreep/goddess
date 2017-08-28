@@ -4,7 +4,7 @@ html {
 
 body {
     background: #ffffff;
-    color: #777;
+    color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -1263,4 +1263,40 @@ textarea#message {
 
 .nav > li > a {
     padding: 0;
+}
+
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 128px;
+    padding-bottom: 48px;
+    min-height: 360px;
+}
+
+#about img {
+    height: 168px;
+    width: auto;
+    margin-right: 24px;
+}
+
+#about p {
+    margin-bottom: 12px;
+}
+
+#about p:last-of-type {
+    margin-bottom: 0px;
+}
+
+.text_block {
+    max-width: 600px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.photo_container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
