@@ -20,7 +20,6 @@ def deploy():
         # Migrate and Update the database
         run('python manage.py makemigrations')
         run('python manage.py migrate')
-        run('python manage.py syncdb')
 
     # Restart the nginx server
     sudo('service apache2 restart')
