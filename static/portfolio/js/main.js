@@ -102,13 +102,13 @@ jQuery(function ($) {
         if (sideBar) {
             $(".nav-container").height(content.height());
         }
-        $(document).scroll(function () {
-            if (sideBar.offset().top + sideBar.height() > projects.offset().top) {
-                sideBar.css({position: 'absolute', bottom: 0, top: "auto"});
-            } else if (sideBar.offset().top - $(document).scrollTop() > 100) {
-                sideBar.removeAttr("style");
-            }
-        });
+        // $(document).scroll(function () {
+        //     if (sideBar.offset().top + sideBar.height() > projects.offset().top) {
+        //         sideBar.css({position: 'absolute', bottom: 0, top: "auto"});
+        //     } else if (sideBar.offset().top - $(document).scrollTop() > 100) {
+        //         sideBar.removeAttr("style");
+        //     }
+        // });
 
         $('.navbar-nav a[href$="' + $('body > section:first').attr('id') + '/"]').parent().addClass("active");
     });
