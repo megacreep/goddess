@@ -38,17 +38,63 @@
   </div>
 </div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal_container">
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- The Close Button -->
+    <span 
+      class="close" 
+      onclick="document.getElementById('myModal').style.visibility='hidden'">
+      &times;
+    </span>
+
+    <span id="left">&#10094;</span>
+    <span id="right">&#10095;</span>
+  </div>
+</div>
+
 <section id="photos">
   <div class="section_title grey_container">
     SELECTED PROJECTS.
   </div>
 
   <div class="photo_container">
-    <img src="{% static 'portfolio/images/photography/1.JPG' %}" style="width:66%; height:auto;"/>
-
+    <img src="{% static 'portfolio/images/photography/1.JPG' %}" style="width:70%;"/>
+    <div class="flexbox photo_grid" style="">
+      <div class="flexbox column grid_column">
+        <img src="{% static 'portfolio/images/photography/2.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/3.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/4.JPG' %}" style="width:100%;"/>
+      </div>
+      <div class="flexbox column grid_column">
+        <img src="{% static 'portfolio/images/photography/5.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/6.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/7.JPG' %}" style="width:100%;"/>
+      </div>
+      <div class="flexbox column grid_column">
+        <img src="{% static 'portfolio/images/photography/8.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/9.JPG' %}" style="width:100%;"/>
+        <img src="{% static 'portfolio/images/photography/10.JPG' %}" style="width:100%;"/>
+      </div>
+    </div>
+    <img src="{% static 'portfolio/images/photography/11.JPG' %}" style="width:70%; align-self: flex-end"/>
+    <div class="photo_grid photo_row">
+        <img src="{% static 'portfolio/images/photography/12.JPG' %}" style="width:33.33%;"/>
+        <img src="{% static 'portfolio/images/photography/13.JPG' %}" style="width:33.33%;"/>
+        <img src="{% static 'portfolio/images/photography/14.JPG' %}" style="width:33.33%;"/>
+    </div>
+    <div class="photo_grid photo_row">
+        <img src="{% static 'portfolio/images/photography/15.JPG' %}" style="width:33.33%;"/>
+        <img src="{% static 'portfolio/images/photography/16.JPG' %}" style="width:33.33%;"/>
+        <img src="{% static 'portfolio/images/photography/17.JPG' %}" style="width:33.33%;"/>
+    </div>
   </div>
-
 </section>
+
 
 <!--/#about-->
 {% endblock %}

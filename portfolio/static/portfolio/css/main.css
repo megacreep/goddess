@@ -1259,6 +1259,7 @@ textarea#message {
     box-shadow: 0 2px 2px -2px rgba(100, 100, 100, 0.9);
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 .nav > li > a {
@@ -1299,4 +1300,137 @@ textarea#message {
     background-color: black;
     display: flex;
     flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.photo_grid > div:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.grid_column {
+    flex: 1 1 auto;
+    width: 33%;
+}
+
+.grid_column > img:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.photo_container > *:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.photo_container img {
+    height: auto;
+    cursor: pointer;
+}
+
+.photo_container img:hover {
+    opacity: 0.7;
+}
+
+.photo_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.photo_row img:not(:last-of-type) {
+    margin-right:8px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: flex; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_container {
+    overflow: hidden;
+    align-self: center;
+    height: 80%;
+    position: relative;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    color: #f1f1f1;
+    font-size: 60px;
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}
+
+#left, #right {
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    margin-top: -30px;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+#left:hover,
+#right:hover {
+    opacity: 0.7;
+}
+
+#left {
+    left: 16px;
+}
+
+#right {
+    right: 16px;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
