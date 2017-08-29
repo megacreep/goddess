@@ -16,7 +16,7 @@ def deploy():
     with cd('/var/www/goddess'):
         run('git reset --hard')
         run('git pull')
-        run('python manage.py collectstatic --noinput --clear')
+        run('python manage.py collectstatic --noinput')
         # Migrate and Update the database
         run('python manage.py makemigrations')
         run('python manage.py migrate')
