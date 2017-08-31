@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^projects_ureveal/$', views.project_ureveal, name='projects_ureveal'),
     url(r'^projects_tune/$', views.project_tune, name='projects_tune'),
     url(r'^projects_renaissance/$', views.project_renaissance, name='projects_renaissance'),
+    url(r'^footprint/$', views.footprint, name='footprint'),
     url(r'^research/$', views.research, name='research'),
     url(r'^interests/$', views.interests, name='interests'),
     url(r'^contact/$', views.contact, name='contact'),

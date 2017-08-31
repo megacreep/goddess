@@ -80,8 +80,13 @@ def project_ureveal(request):
 def project_tune(request):
     return render(request, 'portfolio/project_tune.html')
 
+
 def project_renaissance(request):
     return render(request, 'portfolio/project_renaissance.html')
+
+
+def footprint(request):
+    return render(request, 'portfolio/footprint.html')
 
 def research1(request):
     return render(request, 'portfolio/research1.html')

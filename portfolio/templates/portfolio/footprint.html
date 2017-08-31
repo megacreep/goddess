@@ -1,0 +1,119 @@
+{% extends 'portfolio/projects_list.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block project_detail %}
+  <section id="project_detail">
+    <div class="container">
+      <div class="row">
+        <div id="project_nav" class="col-sm-3">
+          <div class="nav-container">
+            <ul class="project_nav nav">
+              <li class="back"><a href="{% url 'portfolio:index' %}">&larr;  Back to Projects</a></li>
+              <li class="active"><a href="#background">Background</a></li>
+              <li><a href="#challenges">Challenges</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#vision">Vision</a></li>
+            </ul>
+          </div>
+        </div>
+      <div id="content" class="col-sm-9">
+        <div>
+          <h2>Guiding Question</h2>
+          <p> 
+            As we all know, life at CMU is very busy and full of hard work. Most of our time is either at home or campus. Also, a lot of people stay late and leave the campus at midnight, which is very unhealthy. We all want to change our lifestyle to a healthy pattern. However, we may not be aware of our daily life and find excuses for ourselves as "It will be the last time I go home this late." or "I will go out and relax a little bit this weekend." In most cases, it is no more than a placebo. So, in this project byte, I want to collect my location data for the whole month and monitor my daily activities. I hope to know my "footprints" in Pittsburgh in terms of sequential geometry information, accumulated data, and data segments by the time period during the day.   
+          </p>
+        </div>
+        
+        <h2>Data Quality</h2>
+          <h4>Completeness </h4>
+          <p> 
+            I think the data completeness is fairly good. I accessed my dataset by looking into how much data points I have collected per day and their time distribution. 
+          </p>
+          <p>
+            The biggest potential problem that will result in incomplete data is the failure in data collection. To improve the data completeness, I charged my phone regularly and put it in my pocket all the time. However, there may still be some missing value. For example, my phone died when I was snowboarding due to the cold weather. Also, that day is not representative since I only went to the resort once this year. Thus, to rule out the possibility that these missing data will affect my results, I deleted that day while plotting an accumulated location map (heat map). 
+          </p>
+          <h4>Coherence </h4>
+          <p> 
+            I think the data coherence is good. The data made sense to me since it is fairly represented my daily travel activity and met my expectations of my typical days in CMU. Also, the data points distribution is relevant to the places I spent most of my time. One exception is Feb 4th; there are many outliers on that day. However, since  I traveled to a snowboarding resort, the data make sense to me.  
+          </p>
+          <h4>Correctness </h4>
+          <p>  
+            The dataset is fairly correct.  I manually verified the data in two ways. Before the study, I  collected a test data sample both indoor and outdoor in 5 locations. I spent two hours at each location and checked the data points I collected during the meantime. The result showed that the offset is less than 20 meters and the timestamp matched the time I conducted these tests. I believe it is high enough for this study and there is no need for calibration. Moreover, to ensure that the accuracy is stable over time, I compared the data points I collected during 3 am to 7 am for the first five days. The data showed that I was at home during all these time periods. The results are in agreement with the facts.  
+          </p>
+          <h4>Accountability </h4>
+          <p>  
+            I collect the data with AWARE from my phone 6s GPS sensor. Since iphone5, Apple has been using A-GPS, GLONASS, and Wi-Fi positioning system to provide user location information, which is fairly accurate with less than 10m offset outdoor. I believe the accuracy of this data is high enough for this study purpose. 
+          </p>
+        
+        <h2>My location activiry over the time</h2>
+        <p>
+          The first map shows the places I have been during the past month. It is obvious that I have spent most of my time at home or campus. One exception is Feb. 4th. I went to spring sevens and spent a nice day snowboarding there. 
+          (zoom out to view the whole dataset)
+        </p>
+        
+        <iframe width="100%" height="520" frameborder="0" src="https://tianxinyu.carto.com/builder/26cd942a-fbf0-11e6-b8bb-0ef24382571b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          
+
+        <h2>Time I spend on different locations</h2>
+        <p>
+          The following map shows my location data in different time segments during the day, from 8:00 am to 12:00 pm/ 0:00 am. If you choice the period from 10 pm to 12 pm,  you will find that about 1/3 of the days that I was at the campus. It is not that worse, actually, 
+          probably better than your data? Still, the story would be different if we take samples from U Pitts as a reference.....LOL. 
+        </p>
+        
+        <iframe width="100%" height="520" frameborder="0" src="https://tianxinyu.carto.com/builder/f5116e9a-fcb5-11e6-bcc4-0e3ebc282e83/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>  
+
+        <h2>Places I stay</h2>
+        <p>
+          The following map is a heat map that shows my accumulated location data. I cleaned out the snowboarding day to make this dataset more representative. The places I spend most of my time were my home, Gates, NSH, FMS building, and the bus stop.
+          I assume that there would be a big red spot for the gym. However, I spent quite a lot time to find it ..... 
+          <b>click the white circle to view!</b>
+        </p>
+        
+         <iframe width="100%" height="520" frameborder="0" src="https://tianxinyu.carto.com/builder/f35be25e-fc8a-11e6-aba7-0e3ff518bd15/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+               
+          
+        <h2>Real time monitor</h2>
+        <p> 
+          Here is the real-time monitor of my location. There maybe some delay since I might not be able to sync my data to google cloud without wifi. 
+          If you find me stay at campus at midnight, it would be nice to send me a message and push me go home....  
+        </p>
+        
+        <div id="map" style="height: 500px;">
+        </div>
+          <script>
+            function initMap() {
+              var uluru = {
+                lat: 37.3957033,
+                lng: -121.9934743
+              };
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru
+              });
+              var infowindow = new google.maps.InfoWindow({
+                content: new Date().toString()
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+              marker.addListener('click', function() {
+                infowindow.open(map, marker);
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF-j-Dkk-k-yUcgYjThf1_J6Wy5wlItd8&callback=initMap">
+          </script>
+      </div>
+    </div>
+  </section>
+
+  <section id="project_footer">
+    <div id="footer_container">
+      <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+      <a href="#project_detail">&uarr; Back to Top</a>
+      <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+    </div>
+  </section>
+{% endblock %}

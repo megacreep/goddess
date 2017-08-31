@@ -112,3 +112,15 @@
 	height: auto;
 	float: right;
 }
+
+body.embed a.powered-by {
+	visibility: hidden;
+}
+
+.headroom--unpinned {
+	visibility: hidden;
+}
+
+.headroom--bottom {
+	visibility: visible;
+}

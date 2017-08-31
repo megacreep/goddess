@@ -135,6 +135,8 @@ jQuery(function ($) {
 
         $('.navbar-nav a[href$="' + $('body > section:first').attr('id') + '/"]').parent().addClass("active");
 
+        $('.headroom').headroom();
+
         // Handle ESC key (key code 27)
         document.addEventListener('keyup', function(e) {
             if (e.keyCode == 27) {
