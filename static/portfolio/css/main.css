@@ -20,18 +20,6 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-.bcenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .btn {
     font-weight: 300;
     border: 0;
@@ -767,17 +755,6 @@ textarea#message {
     position: relative;
 }
 
-.nav-box {
-    top: 100px;
-    position: fixed;
-    /*-webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);*/
-    /*-moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);*/
-    /*box-shadow: 0 3px 20px 0 rgba(0,0,0,.4);*/
-}
-
-.nav-container > li > a {
-    padding: 15px 40px;
-}
 
 .research-item h3 a{
     color: #777;
@@ -829,23 +806,8 @@ textarea#message {
     border-bottom: 1px solid #ddd
 }
 
-#content {
-    line-height: 28px;
-}
-
 #content p {
     text-indent: 20px;
-}
-
-.outline {
-    border: 1px solid #aaaaaa;
-    border-style: solid none;
-    margin: 20px 0px;
-    padding: 20px 10px;
-}
-
-.outline strong {
-    padding-right: 7px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1067,14 +1029,17 @@ textarea#message {
     flex-direction: column;
 };
 
-
-
 .portfolio-item .item-inner:hover {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img {
     width: 100%;
+    opacity: 0.8;
+}
+
+.portfolio-item img:hover {
+    opacity: 1;
 }
 
 .portfolio-item .portfolio-image {
@@ -1272,7 +1237,7 @@ textarea#message {
 }
 
 
-#about {
+#about_me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1281,17 +1246,17 @@ textarea#message {
     min-height: 360px;
 }
 
-#about img {
+#about_me img {
     height: 168px;
     width: auto;
     margin-right: 24px;
 }
 
-#about p {
+#about_me p {
     margin-bottom: 12px;
 }
 
-#about p:last-of-type {
+#about_me p:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -1358,6 +1323,7 @@ textarea#message {
     visibility: hidden;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .modal_container {
@@ -1367,11 +1333,25 @@ textarea#message {
     position: relative;
 }
 
+
 /* Modal Content (Image) */
 .modal-content {
     margin: auto;
     height: 100%;
     width: auto;
+}
+
+@media screen and (orientation:portrait) {
+    .modal_container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Add Animation - Zoom in the Modal */
