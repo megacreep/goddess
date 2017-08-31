@@ -1,0 +1,21 @@
+.project_nav {
+	display:flex;
+	flex-direction: column;
+    top: 100px;
+    position: fixed;
+}
+
+.nav-container li {
+	list-style-type: none;
+	padding: 8px 16px;
+}
+
+.nav-container li:hover, 
+.nav-container li.active {
+	background-color: #EEEEEE;
+	border-radius: 8px;
+}
+
+.nav-container a {
+	color: black;
+}
