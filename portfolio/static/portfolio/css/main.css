@@ -20,18 +20,6 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-.bcenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .btn {
     font-weight: 300;
     border: 0;
@@ -1067,14 +1055,17 @@ textarea#message {
     flex-direction: column;
 };
 
-
-
 .portfolio-item .item-inner:hover {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img {
     width: 100%;
+    opacity: 0.8;
+}
+
+.portfolio-item img:hover {
+    opacity: 1;
 }
 
 .portfolio-item .portfolio-image {
