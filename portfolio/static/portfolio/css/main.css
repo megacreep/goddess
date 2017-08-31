@@ -806,23 +806,8 @@ textarea#message {
     border-bottom: 1px solid #ddd
 }
 
-#content {
-    line-height: 28px;
-}
-
 #content p {
     text-indent: 20px;
-}
-
-.outline {
-    border: 1px solid #aaaaaa;
-    border-style: solid none;
-    margin: 20px 0px;
-    padding: 20px 10px;
-}
-
-.outline strong {
-    padding-right: 7px;
 }
 
 @media screen and (max-width: 960px) {

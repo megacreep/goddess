@@ -11,6 +11,23 @@ All of these pages should implement the project_detail block.
 
 {% block content %}
 
+<div class="flexbox center header">
+  <div class="container">
+    <div id="navbar" class="navbar navbar-default vertical-center">
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'portfolio:index' %}">PORTFOLIO.</a></li>
+          <li><a href="{% url 'portfolio:about' %}">ABOUT ME.</a></li>
+          <li>
+            <a href="https://drive.google.com/file/d/0B11ZiMRffQnPbFJXY3lBaVRJVkU/view?usp=sharing" target="_blank">
+              RESUME.
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section id="projects">
   {% block project_detail %}

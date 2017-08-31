@@ -9,8 +9,8 @@
         <div id="project_nav" class="col-sm-3">
           <div class="nav-container">
             <ul class="project_nav nav">
-              <li class="back"><a href="{% url 'portfolio:projects' %}">Back to Projects</a></li>
-              <li class="active"><a href="#about">Introduction</a></li>
+              <li class="back"><a href="{% url 'portfolio:index' %}">Back to Projects</a></li>
+              <li class="active"><a href="#background">Introduction</a></li>
               <li><a href="#challenges">Challenges</a></li>
               <li><a href="#solutions">Solutions</a></li>
               <li><a href="#vision">Vision</a></li>
@@ -19,21 +19,20 @@
         </div>
         <div id="content" class="col-sm-9">
           <section id="abstract">
-            <h1>Tune</h1>
+            <img src="{% static 'portfolio/images/projects/tune/icon.png' %}">
+            <h1>Tune: Teaching Motor Skills for Blind Kids</h1>
             <div class="outline">
-              <h4> Project information</h4>
-              <div>
-                <ul>
-                  <li><strong>Organization:</strong>Independent project</li>
-                  <li><strong>Time:</strong>2016.1 - </li>
-                  <li><strong>Cooperator:</strong>Beijing School for The Blind</li>
-                </ul>
-              </div>
+              <ul>
+                <li><strong>Organization:</strong>Independent project</li>
+                <li><strong>Time:</strong>2016.1 - </li>
+                <li><strong>Cooperator:</strong>Beijing School for The Blind</li>
+              </ul>
             </div>
           </section>
 
-          <section id="about">
-            <h3>Introduction</h3>
+          <section id="background">
+            <h2>Background</h2>
+            <h3>Stories behind the product</h3>
             <p>
               TUNE is a novel sensorimotor training design for blind children. In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for movement development. Lacking motor training will result in a host of problems in their later life. TUNE is a haptic belt combined with motor exercise games, in which we use accelerate, inertial and geomagnetism sensors to track children's gait, walking direction and body angle information.
             </p>
@@ -84,5 +83,11 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="project_footer">
+    <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+    <a href="#project_detail">&uarr; Back to Top</a>
+    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
   </section>
 {% endblock %}
