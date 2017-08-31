@@ -9,7 +9,7 @@
         <div id="project_nav" class="col-sm-3">
           <div class="nav-container">
             <ul class="project_nav nav">
-              <li class="back"><a href="{% url 'portfolio:index' %}">Back to Projects</a></li>
+              <li class="back"><a href="{% url 'portfolio:index' %}">&larr;  Back to Projects</a></li>
               <li class="active"><a href="#background">Introduction</a></li>
               <li><a href="#challenges">Challenges</a></li>
               <li><a href="#solutions">Solutions</a></li>
@@ -41,6 +41,19 @@
               We use sound (for 1.5-8 years old) and haptic feedback (for 5-8years old) to represent correct and incorrect movements. Every step in the right track and direction will generate a different note (audio feedback). The whole task is represented as music tune. There are a few music options for each task, providing choice which can increase the fun element of the exercise as the children ‘walk’ out each song.  When the child is older than 4 years old, every time the child deviates from the track, there will be a vibration feedback from the haptic belt providing directional cues. These real-time feedback signals are more accurate and intuitive than a spoken signal. As the child’s motor ability progresses, they will receive less haptic feedbacks and ‘walk’ out more fluent music tune. Parents and tutors can easily use TUNE with our simple guidance and phone APP. With TUNE,motor exercises for little blind children(1.5-8 years old) could become more accessible, intuitive, effective , inexpensive and fun.
             </p>
             <img src="{% static 'portfolio/images/projects/tune/intro.png' %}" class="img-responsive" />
+
+            <h3>Phone Application </h3>
+            <div class="flexbox">
+              <iframe width="420" height="920" src="https://invis.io/S7D9Z4MPH" frameborder="0" allowfullscreen></iframe>
+              <div class="photo_description_side">
+              <p>
+                Here is the description of the phone application. Updating…. >_<
+              </p>
+
+              </div>
+            </div>
+
+
           </section>
 
           <hr />
@@ -86,8 +99,10 @@
   </section>
 
   <section id="project_footer">
-    <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
-    <a href="#project_detail">&uarr; Back to Top</a>
-    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+    <div id="footer_container">
+      <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+      <a href="#project_detail">&uarr; Back to Top</a>
+      <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+    </div>
   </section>
 {% endblock %}

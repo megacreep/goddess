@@ -1,0 +1,70 @@
+{% extends 'portfolio/projects_list.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block project_detail %}
+  <section id="project_detail">
+    <div class="container">
+      <div class="row">
+        <div id="project_nav" class="col-sm-3">
+          <div class="nav-container">
+            <ul class="project_nav nav">
+              <li class="back"><a href="{% url 'portfolio:index' %}">&larr;  Back to Projects</a></li>
+              <li class="active"><a href="#background">Background</a></li>
+              <li><a href="#challenges">Challenges</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#vision">Vision</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="content" class="col-sm-9">
+          <section id="abstract">
+            <img src="{% static 'portfolio/images/projects/tune/icon.png' %}">
+            <h1>Star Agent: Empowering Teacher with Data</h1>
+            <div class="outline">
+              <ul>
+                <li><strong>Client:</strong> Renaissance Learning</li>
+                <li><strong>Time:</strong>2017.02 - 2017.08,  Product Shipped</li>
+                <li><strong>My Role:</strong>UX Research Lead, Product Designer</li>
+                <li><strong>Skills:</strong>UX Research | Graphic Design | Product Design | Data Visualization</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="background">
+            <h2>Background</h2>
+            <h3>Stories behind the product</h3>
+            <p>
+              Renaissance Learning is a leading educational technology company specializing in educational data analytics to enhance learning. Renaissance Learning’s Star Assessments are computer-adaptive tests used to measure student performance in reading, math, and early literacy. These assessments are widely used for Response to Intervention (RTI) and Multi-Tiered Support System (MTSS) purposes. Comparing an individual's student’s Star Assessment score to norms across all students taking Star assessments can aid teachers in identifying students in need of intervention (screening), measuring growth towards state standards (growth and progress monitoring), and evaluating the effectiveness of different interventions.
+            </p>
+            <p>
+              Setting goals is a fundamental aspect of assessing a student’s progress. By setting a goal for a student, a teacher creates a criterion against which to measure student growth. With this criterion, that teacher can measure the effectiveness of their interventions, decide how to allocate resources for students in need of support, and consider the types of interventions that the student needs. In addition to providing feedback about intervention efficacy, challenging yet reasonable goals can engage students and promote growth.
+            </p>
+            <p>
+              Renaissance Learning has developed a Goal Setting Wizard (GSW) to assist teacher setting goals for students. However, only 3% of their clients used this tool, let alone that most of the teachers deviated from the best practice that the GSW is designed for.Our team has partnered with Renaissance to find a solution that empowers teachers to use data-driven approaches to setting student goals based on their current product.
+            </p>
+
+            <h3>Phone Application </h3>
+            <img src="{% static 'portfolio/images/projects/capstone/fm.jpg' %}" class="oversize_img" />
+            <img src="{% static 'portfolio/images/projects/capstone/fm.jpg' %}" class="img-responsive" />
+            <p>
+              Setting goals is a fundamental aspect of assessing a student’s progress. By setting a goal for a student, a teacher creates a criterion against which to measure student growth. With this criterion, that teacher can measure the effectiveness of their interventions, decide how to allocate resources for students in need of support, and consider the types of interventions that the student needs. In addition to providing feedback about intervention efficacy, challenging yet reasonable goals can engage students and promote growth.
+            </p>
+            <p>
+              Renaissance Learning has developed a Goal Setting Wizard (GSW) to assist teacher setting goals for students. However, only 3% of their clients used this tool, let alone that most of the teachers deviated from the best practice that the GSW is designed for.Our team has partnered with Renaissance to find a solution that empowers teachers to use data-driven approaches to setting student goals based on their current product.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project_footer">
+    <div id="footer_container">
+      <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+      <a href="#project_detail">&uarr; Back to Top</a>
+      <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+    </div>
+  </section>
+{% endblock %}

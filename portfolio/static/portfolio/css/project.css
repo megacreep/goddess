@@ -54,7 +54,7 @@
 }
 
 #project_detail h2 {
-	color: #FFd600;
+	color: #BB312C;
 	font-size: 24px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
@@ -62,23 +62,23 @@
 
 #project_detail h3 {
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 20px;
 	color: black;
 }
 
 #project_detail h3:before {
-	content: "|";
-	color: #FFD600;
+	content: " ";
+	color: #BB312C;
 	margin-right: 4px;
-	font-weight: bolder;
-	font-size: 24px;
+	border-left: 5px solid #BB312C;
 }
 
 #project_footer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 24px;
+	justify-content: center;
+	padding: 24px 24px;
+	margin-bottom: 24px;	
 }
 
 #project_footer a{
@@ -87,4 +87,28 @@
 
 #project_footer a:hover {
 	color: teal;
+}
+
+#footer_container {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.photo_description_side {
+	flex-grow: 1;
+	align-self: center;
+	margin-left: 24px;
+}
+
+.back a {
+	color: #BB312C;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.oversize_img {
+	width: 133%;
+	height: auto;
+	float: right;
 }
