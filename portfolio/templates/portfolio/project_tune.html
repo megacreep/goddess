@@ -3,135 +3,145 @@
 {% load i18n %}
 
 {% block project_detail %}
-  <section id="project_tune" class="project_detail">
-    <img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
-    <div class="container">
-      <div class="row">
-        <div id="project_nav" class="col-sm-3">
-          <div class="nav-container">
-            <ul class="project_nav nav">
-              <li class="back"><a href="{% url 'portfolio:index' %}">&larr;  Back to Projects</a></li>
-              <li class="active"><a href="#background">Introduction</a></li>
-              <li><a href="#challenges">Challenges</a></li>
-              <li><a href="#solutions">Solutions</a></li>
-              <li><a href="#vision">Vision</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="content" class="col-sm-9">
-          <section id="abstract">
-            <h1>Tune: Teaching Motor Skills for Blind Kids</h1>
-            <div class="outline">
-              <ul>
-                <li><strong>Client:</strong>Independent project</li>
-                <li><strong>Time:</strong>2015.05 - </li>
-                <li><strong>Cooperator:</strong>Beijing School for The Blind</li>
-                <li><strong>My Role:</strong>Project Lead, UI&UX Designer, Researcher</li>
-                <li><strong>Skills:</strong>Product Design | UX Research | Information Design | Experiment Design and Coding | Project Management </li>
+<section id="project_tune" class="project_detail">
+  <img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
+  <section class="project-header">
+    <div class="font-size-18 grey-4a" style="font-weight: 400;">
+      MOTOR TRANING FOR BLIND CHILDREN
+    </div>
+    <h1 class="grey-4a bold">TUNE</h1>
+    <p>
+      In many developing counties, there are less than 10% of blind children are receiving effective motor skill training in their critical development period. TUNE presents a new possibility to tackle this problem. 
+    </p>
+  </section>
 
-              </ul>
-            </div>
-          </section>
+  <section class="abstract-container">
+    <div class="abstract-left">
+      <h4>WHY TUNE?</h4>
+      <p>
+        During 2013 - 2014, I was working on haptic perception research and tangible interaction design at Microsoft Research Asia. One of my research interest is how people with visual impairment perceive differently from normally developed ones. To answer this question, I engaged with visually impaired people from different, from special education school to local massage shops. Shortly, I learned about that early training for rehabilitation is neither affordable nor effective for most of them, which results in a host of problems in their later life. 
+      </p>
+      <p>
+        In the following year, I initiated a project to design an affordable and ready-to-use product to help blind kid practice motor skills. Working with a hardware engineer and an industrial designer, we created Tune, a motor skill training belt. This product has been designed, prototyped, and put into clinical experiments now. 
+      </p>
+    </div>
+    <div class="abstract-right">
+      <div class="abstract-list">
+        <h4>MY ROLE</h4> <span>&nbsp; 2015.05 - </span>
+        <ul>
+          <li>Project Lead</li>
+          <li>Researcher</li>
+          <li>UI & UX Designer</li>
+        </ul>
+      </div>
 
-          <section id="background">
-            <h2>BACKGROUND</h2>
-            <h3>Stories behind the product</h3>
-            <p>
-              During 2013 - 2014, I was working on haptic perception research and tangible interaction design at Microsoft Research Asia. One of my research interest is how people with visual impairment perceive differently from normally developed ones. To answer this question, I engaged with visually impaired people from different, from special education school to local massage shops. Shortly, I learned about that early training for rehabilitation is neither affordable nor effective for most of them, which results in a host of problems in their later life. In the following year, I initiated a project to design an affordable and ready-to-use product to help blind kid practice motor skills. Working with a hardware engineer and an industrial designer, we created Tune, a motor skill training belt. This product has been designed, prototyped, and put into clinical experiments now. 
-
-            </p>
-            <img src="{% static 'portfolio/images/projects/tune/1.jpg' %}" class="img-responsive" />
-
-          <section id="preview">
-            <h2>PRODUCT PREVIEW</h2>
-            <h3>The design challenges and solutions</h3>
-
-            <p>
-              In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for movement development. Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? After a few months’ research, the answer became clear. For kids who suffered from visual impairment, shorting knowledge and awareness in motor skill training from their parents is the substantial barrier for their early rehabilitation.  Also, their families’ low socioeconomic status paired with limited resources and accessibility of rehabilitation programs in special education schools make the situation worse. Moreover, motor rehabilitation requires long-term intervention. Kids’ lack of interest in training further limited the effect of current training programs. 
-            </p>
-            <p>
-              An effective solution should be affordable, user-friendly for parents, motivating and fun for kids, and last but not the least, has a strong scientific basis. 
-            </p>
-
-            <img src="{% static 'portfolio/images/projects/tune/2.png' %}" class="img-responsive" />
-            <p>
-              An effective solution should be affordable, user-friendly for parents, motivating and fun for kids, and last but not the least, has a strong scientific basis. 
-            </p>
-            <p>
-              We use sound (for 1.5-8 years old) and haptic feedback (for 5-8years old) to represent correct and incorrect movements. Every step in the right track and direction will generate a different note (audio feedback). The whole task is represented as music tune. There are a few music options for each task, providing choice which can increase the fun element of the exercise as the children ‘walk’ out each song.
-            </p>
-            
-            <img src="{% static 'portfolio/images/projects/tune/3.png' %}" class="img-responsive" />
-
-            <h3>Phone Application </h3>
-            <div class="flexbox">
-              <img width="420" height="920" src="{% static 'portfolio/images/projects/tune/Apppreview.png' %}" class="img-responsive" />
-              <div class="photo_description_side">
-              <p>
-               Parents and tutors can easily use TUNE with our simple guidance and phone APP. As the child’s motor ability progresses, they will unlock more challenging exercises suggested by the application. 
-              </p>
-
-              </div>
-            </div>
-
-            <h3>Product Structure </h3>
-
-            <img src="{% static 'portfolio/images/projects/tune/structure.png' %}" class="img-responsive" />
-
-          </section>
-
-          <hr />
-          <section id="researchprocess">
-            <h2>RESEARCH PROCESS</h2>
-            <h3>Reframe the problem with user study</h3>
-            <h3>Cognitive science as basis</h3>
-            <h3>From the science to the product</h3>
-            <p>
-              
-            </p>
-            <p>
-             
-            </p>
-            <img src="{% static 'portfolio/images/projects/tune/structure.png' %}" class="img-responsive" />
-          </section>
-
-          <hr />
-          <section id="designprodess">
-            <h2>DESIGN PROCESS</h2>
-            <h3>Iterate, Iterate, and Iterate</h3>
-            <h3>Final design and visioning</h3>
-            <p>
-              
-            </p>
-            <p>
-              
-            </p>
-            <img src="{% static 'portfolio/images/projects/tune/scenario.png' %}" class="img-responsive" />
-
-            <p>
-              
-            </p>
-            <p>
-              
-            </p>
-            <img src="{% static 'portfolio/images/projects/tune/logo.png' %}" class="img-responsive" />
-          </section>
-          <section id="vision">
-            <h3>Vision</h3>
-            <p>
-              
-            </p>
-          </section>
-        </div>
+      <div class="abstract-list">
+        <h4>SKILLS</h4>
+        <ul>
+          <li>Product Design</li>
+          <li>Interaction Design</li>
+          <li>User Study</li>
+          <li>Experiment Design and Coding</li>
+          <li>Project Management</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="project_footer">
-    <div id="footer_container">
-      <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
-      <a href="#project_detail">&uarr; Back to Top</a>
-      <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+  <section id="preview" class="project-section">
+    <div class="section-title-container">
+      <div class="section-title-seq">
+        1
+      </div>
+      <div class="section-title-right">
+        <h2>PROJECT SUMMARY</h2>
+        <div>The Problem and Solutions</div>
+      </div>
+    </div>
+
+    <p>
+      Also, their families’ low socioeconomic status paired with limited resources and accessibility of rehabilitation programs in special education schools make the situation worse. Moreover, motor rehabilitation requires long-term intervention. Kids’ lack of interest in training further limited the effect of current training programs. 
+    </p>
+
+    <h3>
+      THE PROBLEM
+    </h3>
+    <p>
+      In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for movement development. Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? After a few months’ research, the answer became clear. For kids who suffered from visual impairment, shorting knowledge and awareness in motor skill training from their parents is the substantial barrier for their early rehabilitation.  
+    </p>
+
+    <div class="flex-list">
+      <div class="flex-list-item">
+        Insufficient motor training will result
+      </div>
+      <div class="flex-list-item">
+        Insufficient motor training will result
+      </div>
+      <div class="flex-list-item">
+        Insufficient motor training will result
+      </div>
+      <div class="flex-list-item">
+        Insufficient motor training will result
+      </div>
+    </div>
+
+
+    <h3>
+      OUR SOLUTION
+    </h3>
+    <p>
+      In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for movement development. 
+    </p>
+
+    <img src="{% static 'portfolio/images/projects/tune/1.png' %}" class="img-responsive" style="margin-bottom: 48px;">
+
+    <div class="flexbox" style="flex-wrap: wrap; width: 120%; align-self: center; justify-content: space-between;">
+      <div class="flexbox column" style="width: 23%;">
+        <div class="icon-label-container">
+          <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
+          <span>MOTIVATING</span>
+        </div>
+        <div>
+          Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
+        </div>
+      </div>
+      <div class="flexbox column" style="width: 23%;">
+        <div class="icon-label-container">
+          <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
+          <span>MOTIVATING</span>
+        </div>
+        <div>
+          Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
+        </div>
+      </div>
+      <div class="flexbox column" style="width: 23%;">
+        <div class="icon-label-container">
+          <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
+          <span>MOTIVATING</span>
+        </div>
+        <div>
+          Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
+        </div>
+      </div>
+      <div class="flexbox column" style="width: 23%;">
+        <div class="icon-label-container">
+          <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
+          <span>MOTIVATING</span>
+        </div>
+        <div>
+          Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
+        </div>
+      </div>
+
     </div>
   </section>
+</section>
+
+<section id="project_footer">
+  <div id="footer_container">
+    <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+    <a href="#project_detail">&uarr; Back to Top</a>
+    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+  </div>
+</section>
 {% endblock %}
