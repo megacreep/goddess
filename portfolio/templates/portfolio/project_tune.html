@@ -3,8 +3,11 @@
 {% load i18n %}
 
 {% block project_detail %}
+
+<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
+<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img_shadow" >
+
 <section id="project_tune" class="project_detail">
-  <img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
   <section class="project-header">
     <div class="font-size-18 grey-4a" style="font-weight: 400;">
       MOTOR TRANING FOR BLIND CHILDREN
@@ -48,7 +51,7 @@
     </div>
   </section>
 
-  <section id="preview" class="project-section">
+  <div class="project-section">
     <div class="section-title-container">
       <div class="section-title-seq">
         1
@@ -134,7 +137,72 @@
       </div>
 
     </div>
-  </section>
+
+    <h3> PRODUCT PREVIEW </h3>
+  </div>
+
+  <div class="flexbox">
+    <div class="textbox" style="height: 480px; flex-grow: 1; background-color: #F2F2F2; padding-left: 10%;">
+      <strong> PHONE APPLICATION </strong>
+      <p>
+        In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for ren could receive motor skill training in their sensitive period for
+    </div>
+    <img src="{% static 'portfolio/images/projects/tune/productstructure.png' %}" class="img-responsive" style="height: 480px; width: auto;">
+  </div>
+
+  <div class="flexbox flex-center">
+    <img src="{% static 'portfolio/images/projects/tune/apppreview.png' %}" class="img-responsive" style="height: 480px; width: auto; margin-left: 300px;">
+    <div class="textbox" style="height: 480px; padding-left: 10%;">
+      <strong> PHONE APPLICATION </strong>
+      <p>
+        In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for ren could receive motor skill training in their sensitive period for
+    </div>
+  </div>
+
+  <div class="flexbox column flex-center" style="background-color: #F2F2F2; width: 100%; padding: 32px 64px;">
+    <div class="flexbox" style="justify-content: space-between; margin-bottom: 24px; width: 70%; padding-left: 12px;">
+      <div class="textbox">
+        <strong> USER SCENARIOS</strong>
+        <p>
+        In developing countries, less than 10 percent of blind childre
+        </p>
+      </div>
+      <img 
+        src="{% static 'portfolio/images/projects/tune/usecase2.png' %}" 
+        class="img-responsive" 
+        style="height: 180px; width: auto; align-self: flex-end;"
+      />
+    </div>
+
+    <img src="{% static 'portfolio/images/projects/tune/usecase1.png' %}" class="img-responsive" style="height: auto; width: 70%;">
+  </div>
+
+  <div class="section-background" style="height: 600px; background-color: rgba(248, 216, 28, 0.1);">
+    <div class="project-section">
+      <div class="section-title-container">
+        <div class="section-title-seq">
+          2
+        </div>
+        <div class="section-title-right">
+          <h2>RESEARCH PROCESS</h2>
+          <div>Understanding the Users and the Science</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section" style="height: 600px;">
+    <div class="section-title-container">
+      <div class="section-title-seq">
+        3
+      </div>
+      <div class="section-title-right">
+        <h2>DESIGN PROCESS</h2>
+        <div>Iterate, Iterate, and Iterate</div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section id="project_footer">
