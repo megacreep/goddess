@@ -198,10 +198,14 @@
     </div>
     <div class="pg3">
       <div class="pg3_1 pg_item">
-        <img src="{% static 'portfolio/images/pixel.png' %}" >
+        <a href="{% url 'portfolio:footprint' %}">
+          <img src="{% static 'portfolio/images/pixel.png' %}" >
+        </a>
         <div class="pg_title_container">
           <div class="pg_title">
-            MY FOOTPRINTS
+            <a href="{% url 'portfolio:footprint' %}">
+              MY FOOTPRINTS
+            </a>
           </div>
         </div>
       </div>
