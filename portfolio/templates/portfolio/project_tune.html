@@ -98,8 +98,8 @@
 
     <img src="{% static 'portfolio/images/projects/tune/1.png' %}" class="img-responsive" style="margin-bottom: 48px;">
 
-    <div class="flexbox" style="flex-wrap: wrap; width: 120%; align-self: center; justify-content: space-between;">
-      <div class="flexbox column" style="width: 23%;">
+    <div class="flexbox solution-bullets" style="flex-wrap: wrap; width: 120%; align-self: center; justify-content: space-between;">
+      <div class="flexbox column">
         <div class="icon-label-container">
           <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
           <span>MOTIVATING</span>
@@ -108,7 +108,7 @@
           Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
         </div>
       </div>
-      <div class="flexbox column" style="width: 23%;">
+      <div class="flexbox column">
         <div class="icon-label-container">
           <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
           <span>MOTIVATING</span>
@@ -117,7 +117,7 @@
           Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
         </div>
       </div>
-      <div class="flexbox column" style="width: 23%;">
+      <div class="flexbox column">
         <div class="icon-label-container">
           <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
           <span>MOTIVATING</span>
@@ -126,7 +126,7 @@
           Insufficient motor training will result in permanent sensory impairments in their later life. What caused the problem and how can we tackle these challenges? 
         </div>
       </div>
-      <div class="flexbox column" style="width: 23%;">
+      <div class="flexbox column">
         <div class="icon-label-container">
           <img src="{% static 'portfolio/images/projects/tune/icon_1.png' %}" class="img-responsive">
           <span>MOTIVATING</span>
@@ -141,40 +141,48 @@
     <h3> PRODUCT PREVIEW </h3>
   </div>
 
-  <div class="flexbox">
-    <div class="textbox" style="height: 480px; flex-grow: 1; background-color: #F2F2F2; padding-left: 10%;">
+  <div id="tune-structure" class="flexbox left-right-layout" style="background-color: #F2F2F2;">
+    <div class="textbox left" style="flex-grow: 1;">
       <strong> PHONE APPLICATION </strong>
       <p>
         In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for ren could receive motor skill training in their sensitive period for
     </div>
-    <img src="{% static 'portfolio/images/projects/tune/productstructure.png' %}" class="img-responsive" style="height: 480px; width: auto;">
+    <img 
+      src="{% static 'portfolio/images/projects/tune/productstructure.png' %}" 
+      class="img-responsive right"
+    >
   </div>
 
   <div class="flexbox flex-center">
-    <img src="{% static 'portfolio/images/projects/tune/apppreview.png' %}" class="img-responsive" style="height: 480px; width: auto; margin-left: 300px;">
-    <div class="textbox" style="height: 480px; padding-left: 10%;">
-      <strong> PHONE APPLICATION </strong>
-      <p>
-        In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for ren could receive motor skill training in their sensitive period for
+    <div class="flexbox flex-center left-right-layout" style="width: 70%;">
+      <img src="{% static 'portfolio/images/projects/tune/apppreview.png' %}" 
+        class="img-responsive left" style="height: 480px; width: auto;">
+      <div class="textbox right" style="padding-left: 10%;">
+        <strong> PHONE APPLICATION </strong>
+        <p>
+          In developing countries, less than 10 percent of blind children could receive motor skill training in their sensitive period for ren could receive motor skill training in their sensitive period for
+      </div>
     </div>
   </div>
 
-  <div class="flexbox column flex-center" style="background-color: #F2F2F2; width: 100%; padding: 32px 64px;">
-    <div class="flexbox" style="justify-content: space-between; margin-bottom: 24px; width: 70%; padding-left: 12px;">
-      <div class="textbox">
-        <strong> USER SCENARIOS</strong>
-        <p>
-        In developing countries, less than 10 percent of blind childre
-        </p>
+  <div class="flexbox flex-center" style="background-color: #F2F2F2; width: 100%; padding-top: 32px; padding-bottom: 32px;">
+    <div class="flexbox column flex-center" style="width: 80%;"">
+      <div class="flexbox" style="justify-content: space-between; margin-bottom: 24px; ">
+        <div class="textbox" style="padding-right: 8px;">
+          <strong> USER SCENARIOS</strong>
+          <p>
+          In developing countries, less than 10 percent of blind childre
+          </p>
+        </div>
+        <img 
+          src="{% static 'portfolio/images/projects/tune/usecase2.png' %}" 
+          class="img-responsive" 
+          style="height: 180px; width: auto; align-self: flex-end;"
+        />
       </div>
-      <img 
-        src="{% static 'portfolio/images/projects/tune/usecase2.png' %}" 
-        class="img-responsive" 
-        style="height: 180px; width: auto; align-self: flex-end;"
-      />
-    </div>
 
-    <img src="{% static 'portfolio/images/projects/tune/usecase1.png' %}" class="img-responsive" style="height: auto; width: 70%;">
+      <img src="{% static 'portfolio/images/projects/tune/usecase1.png' %}" class="img-responsive" style="height: 446px; width: auto;">
+    </div>
   </div>
 
   <div class="section-background" style="height: 600px; background-color: rgba(248, 216, 28, 0.1);">
