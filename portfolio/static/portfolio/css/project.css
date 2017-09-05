@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.nav-in-project {
+	z-index: -1;
+}
+
 .project_detail .project-header h1 {
   font-size: 32px;
   margin-bottom: 32px;
