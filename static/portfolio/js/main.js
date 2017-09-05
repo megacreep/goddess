@@ -118,6 +118,14 @@ jQuery(function ($) {
         });
     });
 
+    $(window).on('scroll', function(event) {
+        var headerImg = $('.header_img');
+        var content = $('.project_detail');
+        const opacity = Math.abs((content.offset().top - headerImg.offset().top) / headerImg.height());
+        console.log(opacity);
+        headerImg.css('opacity', opacity);
+    });
+
     $(document).ready(function () {
         var sideBar = $(".nav-box");
         var content = $("#project_detail");
@@ -134,8 +142,6 @@ jQuery(function ($) {
         // });
 
         $('.navbar-nav a[href$="' + $('body > section:first').attr('id') + '/"]').parent().addClass("active");
-
-        $('.headroom').headroom();
 
         // Handle ESC key (key code 27)
         document.addEventListener('keyup', function(e) {
@@ -165,4 +171,5 @@ jQuery(function ($) {
     $('.modal_container').on('click', function(event) {
         event.stopPropagation();
     });
+
 });

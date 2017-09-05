@@ -37,9 +37,13 @@ h6 {
     box-shadow: none;
 }
 
+a {
+    color: black;
+}
+
 a:hover,
 a:focus {
-    color: #80c9f1;
+    color: #777;
     text-decoration: none;
     outline: none;
 }
@@ -1150,6 +1154,7 @@ textarea#message {
 
 .pg_item:hover img {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .pg1 img {
