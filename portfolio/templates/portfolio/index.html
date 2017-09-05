@@ -175,25 +175,33 @@
   </div>
   <div class="playground_container">
     <div class="pg1 pg_item">
-      <img src="{% static 'portfolio/images/pixel.png' %}" >
+      <a href="{% url 'portfolio:projects_treeme' %}">
+        <img src="{% static 'portfolio/images/pixel.png' %}" >
+      </a>
       <div class="pg_title_container">
-        <div class="pg_title">
-          TREE ME
-        </div>
-        <div class="pg_desc">
-          Self-growing system using possible selves
-        </div>
+        <a href="{% url 'portfolio:projects_treeme' %}">
+          <div class="pg_title">
+            TREE ME
+          </div>
+          <div class="pg_desc">
+            Self-growing system using possible selves
+          </div>
+        </a>
       </div>
     </div>
     <div class="pg2 pg_item">
-      <img src="{% static 'portfolio/images/pixel.png' %}" >
+      <a href="{% url 'portfolio:projects_learnpar' %}">
+        <img src="{% static 'portfolio/images/pixel.png' %}" >
+      </a>
       <div class="pg_title_container">
-        <div class="pg_title">
-          LEARN PAR
-        </div>
-        <div class="pg_desc">
-          Social learning for kids
-        </div>
+        <a href="{% url 'portfolio:projects_learnpar' %}">
+          <div class="pg_title">
+            LEARN PAR
+          </div>
+          <div class="pg_desc">
+            Social learning for kids
+          </div>
+        </a>
       </div>
     </div>
     <div class="pg3">
@@ -210,84 +218,87 @@
         </div>
       </div>
       <div class="pg3_2 pg_item">
-        <img src="{% static 'portfolio/images/pixel.png' %}" >
-        <div class="pg_title_container">
-          <div class="pg_title">
-            CLIMATE MONITOR
+        <a href="{% url 'portfolio:footprint' %}">
+          <img src="{% static 'portfolio/images/pixel.png' %}" >
+          <div class="pg_title_container">
+            <div class="pg_title">
+              <a href="{% url 'portfolio:footprint' %}">
+                CLIMATE MONITOR
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="research" class="grey_container">
-  <div class="section_title">
-    PREVIOUS RESEARCH.
-  </div>
-  <div class="research_container">
-    <div class="portfolio-item apps">
-      <div class="item-inner">
-        <div class="portfolio-image">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <img src="{% static 'portfolio/images/research/R1.png' %}" alt="">
-          </a>
+  <section id="research" class="grey_container">
+    <div class="section_title">
+      PREVIOUS RESEARCH.
+    </div>
+    <div class="research_container">
+      <div class="portfolio-item apps">
+        <div class="item-inner">
+          <div class="portfolio-image">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <img src="{% static 'portfolio/images/research/R1.png' %}" alt="">
+            </a>
+          </div>
+          <div class="divider teal" ></div>
+          <div class="project_title">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <h5>MODELING ACADEMIC BURNOUT</h5>
+            </a>
+          </div>
         </div>
-        <div class="divider teal" ></div>
-        <div class="project_title">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <h5>MODELING ACADEMIC BURNOUT</h5>
-          </a>
+      </div>
+      <div class="portfolio-item apps">
+        <div class="item-inner">
+          <div class="portfolio-image">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <img src="{% static 'portfolio/images/research/R2.png' %}" alt="">
+            </a>
+          </div>
+          <div class="divider teal" ></div>
+          <div class="project_title">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <h5>EMPOWER TEACHERS WITH DATA</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item apps">
+        <div class="item-inner">
+          <div class="portfolio-image">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <img src="{% static 'portfolio/images/research/R3.png' %}" alt="">
+            </a>
+          </div>
+          <div class="divider teal" ></div>
+          <div class="project_title">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <h5>EMPOWER TEACHERS WITH DATA</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item apps">
+        <div class="item-inner">
+          <div class="portfolio-image">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <img src="{% static 'portfolio/images/research/R4.png' %}" alt="">
+            </a>
+          </div>
+          <div class="divider teal" ></div>
+          <div class="project_title">
+            <a class="preview" href="{% url 'portfolio:projects_tune' %}">
+              <h5>EMPOWER TEACHERS WITH DATA</h5>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="portfolio-item apps">
-      <div class="item-inner">
-        <div class="portfolio-image">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <img src="{% static 'portfolio/images/research/R2.png' %}" alt="">
-          </a>
-        </div>
-        <div class="divider teal" ></div>
-        <div class="project_title">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <h5>EMPOWER TEACHERS WITH DATA</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-item apps">
-      <div class="item-inner">
-        <div class="portfolio-image">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <img src="{% static 'portfolio/images/research/R3.png' %}" alt="">
-          </a>
-        </div>
-        <div class="divider teal" ></div>
-        <div class="project_title">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <h5>EMPOWER TEACHERS WITH DATA</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-item apps">
-      <div class="item-inner">
-        <div class="portfolio-image">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <img src="{% static 'portfolio/images/research/R4.png' %}" alt="">
-          </a>
-        </div>
-        <div class="divider teal" ></div>
-        <div class="project_title">
-          <a class="preview" href="{% url 'portfolio:projects_tune' %}">
-            <h5>EMPOWER TEACHERS WITH DATA</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!--/#about-->
-{% endblock %}
+  <!--/#about-->
+  {% endblock %}
