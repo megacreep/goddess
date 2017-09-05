@@ -121,8 +121,18 @@ jQuery(function ($) {
     $(window).on('scroll', function(event) {
         var headerImg = $('.header_img');
         var content = $('.project_detail');
-        const opacity = Math.abs((content.offset().top - headerImg.offset().top) / headerImg.height());
+        var header = $('.nav-in-project');
+        let opacity = Math.max(0, (content.offset().top - headerImg.offset().top) / headerImg.height());
         headerImg.css('opacity', opacity);
+
+        opacity = Math.max(0, (content.offset().top - header.offset().top) / header.height());
+        header.css('opacity', opacity);
+
+        if (opacity <= 0.01) {
+            header.css('visibility', 'hidden');
+        } else {
+            header.css('visibility', 'visible');
+        }
     });
 
     $(document).ready(function () {

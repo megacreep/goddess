@@ -14,277 +14,212 @@ a qsuedo section should be created for better user experience.
 {% endcomment %}
 
 {% block project_detail %}
-  <section id="project_detail">
-    <div class="container">
-      <div class="row">
-        <div id="project_nav" class="col-sm-3">
-          <div class="nav-container">
-            <ul class="nav nav-pills nav-stacked nav-box">
-      	      <li class="back">
-             		<a href="{% url 'portfolio:projects' %}">
-        		      <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; Back to Projects
-        		    </a>
-      	      </li>
-              <li class="active"><a href="#background">Background</a></li>
-              <li><a href="#methodology">Methodology and Approach</a></li>
-              <li><a href="#develop">Development</a></li>
-              <li><a href="#solution">Solution</a></li>
-              <li><a href="#display">Final Design</a></li></ul>
-          </div>
-        </div>
-        <div id="content" class="col-sm-9">
-          <section id="abstract">
-            <h1>An Information Platform for Campus Student</h1>
-            <div class="outline">
-              <h4> Project information</h4>
-              <div>
-                <ul>
-                  <li><strong>Organization:</strong>Tsinghua University</li>
-                  <li><strong>Team members:</strong>Tianxin Yu, Qiyi Shen, Zhicong Lu, Yicheng Zhong</li>
-                  <li><strong>Length of project:</strong>3 month</li>
-                  <li><strong>Area:</strong>Campus Life, Internet</li>
-                  <li><strong>Tags:</strong> user experience</li>
-                  <li><strong>Research Model:</strong>Service design methodology</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
+<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img_shadow" >
 
-          <section id="summary">
-            <h3>Summary</h3>
-            <ul>
-              <li>What is e-THU?</li>
-              <li>What did we do for e-THU</li>
-            </ul>
-            <p>
-              During the 3-month service design project, we conducted studies on campus life experiences and focused on resource utilization. Activities included: 1）building a model to understand and interpret students’ behavior based on structured questionnaires, interviews and observations. 2）According to this model, we further used  service design methods to design a new platform, e-THU, aiming at improving collaborative  learning and internet-user experience while simultaneously easing internet congestion.
-            </p>
-            <img class="img-responsive doc-img" src="{% static 'portfolio/images/projects/ethu/cover.png' %}" />
-          </section>
+<section id="project_detail" class="project_detail">
+  <div class="project-section">
 
-          <hr />
-          <section id="background">
-            <h2>Background</h2>
-            <section>
-              <h3>Background</h3>
-              <ul>
-                <li>Challenges in campus life service</li>
-              </ul>
-
-              <p>
-               Campus life in Tsinghua University（THU） is exciting yet somehow frustrating. The library is always full during the examination week and the 20G monthly free Internet data flow is easily used up before the end of each month. Further, Internet speed is always slow during the night. However, many resources are actually available but not are properly used, so in order to improve students’ daily study experiences, a niche service system needed to be developed. Such a service would act to reallocate resources and redesign consumer habits.
-              </p>
-            </section>
-
-            <section id="goal">
-              <h3>Priority Goal</h3>
-              <ul>
-                <li>Our objectives in this service design project</li>
-              </ul>
-              <p>
-                The priority goal of this project was to define a model that would interpret student resource utilization behavior, in addition to the factors affecting such behavior.
-              </p>
-              <p>
-                The main field of opportunity, which was identified in the project, was Internet utilization efficiency. Therefore the secondary goal was to develop an innovative internet service to improve internet utilization, taking into consideration student experiences of campus life including collaborative learning, downloading resources and resource sharing, as well as the backstage experiences and processes for data administration and infrastructure maintenance.
-              </p>
-            </section>
-
-            <section id="overview">
-              <h3>Project Overview</h3>
-              <ul>
-                <li>What is the 4D stages?</li>
-                <li>What did we do in each stage?</li>
-              </ul>
-
-              <p>
-               We adopted a 4D (Discover, Define, Develop and Deliver) service design frame to organize the whole project. In the Discover and Define stages, studies were conducted to build student behavioral models and identified an opportunity field. In the Develop and Deliver stages, we used service design method as a persona, with Stake holder, System and custom journey maps to find touch points, designing and delivering solutions.
-              </p>
-              <img src="{% static 'portfolio/images/projects/ethu/review.png' %}" class="img-responsive" />
-            </section>
-
-          </section>
-
-          <hr />
-          <section id="methodology">
-            <h2>Methodology and Approach</h2>
-            <section>
-              <h3>Research Method</h3>
-              <ul>
-                <li>Service design methods were used during the research and develop phrases</li>
-              </ul>
-              <p>
-                In the <strong>research process</strong>, we used structured questionnaires, interviews and observations to obtain first-hand information, gathering a wide range of information on students’ workday and weekend schedules, important agendas, one-day scenarios and comments (problems and complaints). Further, we investigated the usage ratio of public resources (such as internet and library, study room) during different time points. Based on these results, we concluded a behavioral model of resource usage among the student body. Furthermore, we identified an opportunity field for the service design project: Internet utilization.
-              </p>
-              <p>In the <strong>development process</strong>, in depth interviews, expert interviews, brainstorming and focus groups were conducted to raise ideas. We used service design methods to find solutions to specific issues from this research.
-              </p>
-            </section>
-
-            <section id="model">
-              <h3>Behavior Model</h3>
-              <p>
-                In our behavior model, a student’s resource-use behavior is affected by different factors. We classified these factors into: subjective factors, objective factors and external factors.
-              <ul>
-                  <li>The <strong> subjective factors</strong> refer to personal preference such as familiarity, meaning people usually go to a place or choose to use resources that they are familiar with.</li>
-                  <li>The <strong>objective factors</strong> are obligations, such as the course requirements. For example, if students are required to do a group project they may be more likely to use the discussion room more often.
-                  </li>
-                  <li>The <strong>external factors</strong> are the factors that would moderate students’ behavior aside from the objective and subjective factors. For example, asymmetrical information accessibility, which refers to some students inability to recognize or use existing services. For example,Ipv6 services is much more stable and faster inside campus than the Ipv4 service, but only a few students know it and could use it properly.
-                  </li>
-                </ul>
-              </p>
-              <img src="{% static 'portfolio/images/projects/ethu/discover.png' %}" class="img-responsive" />
-            </section>
-
-            <section id="opportunity">
-              <h3>Opportunity Field</h3>
-              <p>We evaluated all the student needs and categorized them according to importance and previous solutions with a focus on Internet utilization, largely required among the student body but still facing many unresolved issues.
-              </p>
-              <img src="{% static 'portfolio/images/projects/ethu/opportunity.png' %}" class="img-responsive" />
-            </section>
-          </section>
-
-          <hr />
-          <section id="develop">
-            <h2>Development</h2>
-            <p>To better illustrate the behavior patterns and demands of users, we used two personas, showing their typical one-day events. Stakeholder and system maps were used to analysis and illustrate resource allocation, in addition to the relationship between stakeholders and back stage administration.
-            <ul>
-                <li>User: we collected <strong>“typical day schedules” </strong> from a variety of students with the two personas acting as representations of these students. We were especially interested in their priority set, on- line activities and the Internet flow usage according to each of their activities.
-                </li>
-                <li>
-                  <strong>Stakeholder</strong>: we built a stakeholder map to illustrate the relationship between people and organizations associated with the campus Internet service.
-                </li>
-                <li>
-                 <strong>System map</strong>: a system map was designed to illustrate Internet services, administrate systems and their interaction with users. We were especially interested in THU center server (THU cloud) Intra-network, Ipv6 and Ipv4 service.
-                </li>
-              </ul>
-            </p>
-            <img src="{% static 'portfolio/images/projects/ethu/develop.png' %}" class="img-responsive" />
-          </section>
-
-          <hr/>
-
-          <section id="solution">
-            <h2>Solution</h2>
-            <section>
-              <h3>Important Facts：</h3>
-              <p>
-                <ul>
-                  <li>Internet is one of the most important aspects in students’ life. Students  need to obtain and share information on a collabrative platform.(objective and subjective factors)</li>
-                  <li>Students have different priorities, whilst most students have preference to use internet services for downloading large files in the evening. This resulted in internet cogestion. (subjective factors)</li>
-                  <li>Students will not always follow their order of priorities and therefore do not utilize the internet effectively. (subjective factors)</li>
-                  <li>Students will change their behavior in relation to service costs. (money and time)</li>
-                  <li>School provides a very good Intra-network service but only a few people use it. (external factor)</li>
-                </ul>
-                The solution aims to use external factors to solve problems first, which will not affect students’ preference and their demands. Futher, if the resources do not meet the needs of everyone, we will moderate towards students’ behavior based on subjective factors.
-              <img src="{% static 'portfolio/images/projects/ethu/solution.png' %}" class="img-responsive" />
-              </p>
-              <h3>Solutions:</h3>
-              <p>
-                <ul>
-                  <li>A foolproof on-line platform for campus students.</li>
-                  <li>Provide sharing, storage and collabrative working for students based on Intra-Networking. (external factor based sulotion)</li>
-                  <li>Adaptive internet pricing system. Provide automatic downloading assitant, which  can help you download low priority files during leisure time.  (subjective factor based solution)</li>
-                  <li>Four more specific function modules （see pic）</li>
-                  <li>Front stage experience and back stage administration （see pic）</li>
-                </ul>
-              <img src="{% static 'portfolio/images/projects/ethu/delivery.png' %}" class="img-responsive" />
-              </p>
-            </section>
-
-            <section id="prototyping">
-              <h3>Usability Test and Prototyping</h3>
-              <p>
-                We carried out amock application and tested the interaction process. Further, we designed the whole ios client of this application.
-              </p>
-              <img src="{% static 'portfolio/images/projects/ethu/final.png' %}" class="img-responsive" />
-            </section>
-          </section>
-
-          <hr />
-          <section id="display">
-            <h3>Final Design</h3>
-            <div id="main-slider" class="carousel slider">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="item active">
-                      <img src="{% static 'portfolio/images/projects/ethu/example_1.png' %}"  class="img-responsive" />
-                </div>
-                <!--/.item-->
-                <div class="item">
-                      <img src="{% static 'portfolio/images/projects/ethu/example_2.png' %}"  class="img-responsive" />
-                </div>
-                <!--/.item-->
-                <div class="item">
-                      <img src="{% static 'portfolio/images/projects/ethu/example_3.png' %}" class="img-responsive" />
-                </div>
-                <!--/.item-->
-              </div>
-              <!--/.carousel-inner-->
-              <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
-              <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
-            </div>
-            <!--/#main-slider-->
-
-          </section>
+    <section id="abstract">
+      <h1>An Information Platform for Campus Student</h1>
+      <div class="outline">
+        <h4> Project information</h4>
+        <div>
+          <ul>
+            <li><strong>Organization:</strong>Tsinghua University</li>
+            <li><strong>Team members:</strong>Tianxin Yu, Qiyi Shen, Zhicong Lu, Yicheng Zhong</li>
+            <li><strong>Length of project:</strong>3 month</li>
+            <li><strong>Area:</strong>Campus Life, Internet</li>
+            <li><strong>Tags:</strong> user experience</li>
+            <li><strong>Research Model:</strong>Service design methodology</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects_list">
-    <div class="container">
-      <div class="box">
-        <h4><strong>Other projects:</strong></h4>
-        <ul class="portfolio-items col-3">  {# The col-* class defines how many columns should be used for portfolio items #}
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_learnpar' %}">
-                  <img src="{% static 'portfolio/images/projects/learnpar/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/learnpar/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>LearnPar</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>TreeMe</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_cmf' %}">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>CMF research tool</h5>
-            </div>
-          </li>
+    <section id="summary">
+      <h3>Summary</h3>
+      <ul>
+        <li>What is e-THU?</li>
+        <li>What did we do for e-THU</li>
+      </ul>
+      <p>
+        During the 3-month service design project, we conducted studies on campus life experiences and focused on resource utilization. Activities included: 1）building a model to understand and interpret students’ behavior based on structured questionnaires, interviews and observations. 2）According to this model, we further used  service design methods to design a new platform, e-THU, aiming at improving collaborative  learning and internet-user experience while simultaneously easing internet congestion.
+      </p>
+      <img class="img-responsive doc-img" src="{% static 'portfolio/images/projects/ethu/cover.png' %}" />
+    </section>
+
+    <section id="background">
+      <h2>Background</h2>
+      <section>
+        <h3>Background</h3>
+        <ul>
+          <li>Challenges in campus life service</li>
         </ul>
-      </div>
-      <!--/.box-->
-    </div>
-    <!--/.container-->
-  </section>
-  <!--/#projects-->
 
+        <p>
+         Campus life in Tsinghua University（THU） is exciting yet somehow frustrating. The library is always full during the examination week and the 20G monthly free Internet data flow is easily used up before the end of each month. Further, Internet speed is always slow during the night. However, many resources are actually available but not are properly used, so in order to improve students’ daily study experiences, a niche service system needed to be developed. Such a service would act to reallocate resources and redesign consumer habits.
+       </p>
+     </section>
+
+     <section id="goal">
+      <h3>Priority Goal</h3>
+      <ul>
+        <li>Our objectives in this service design project</li>
+      </ul>
+      <p>
+        The priority goal of this project was to define a model that would interpret student resource utilization behavior, in addition to the factors affecting such behavior.
+      </p>
+      <p>
+        The main field of opportunity, which was identified in the project, was Internet utilization efficiency. Therefore the secondary goal was to develop an innovative internet service to improve internet utilization, taking into consideration student experiences of campus life including collaborative learning, downloading resources and resource sharing, as well as the backstage experiences and processes for data administration and infrastructure maintenance.
+      </p>
+    </section>
+
+    <section id="overview">
+      <h3>Project Overview</h3>
+      <ul>
+        <li>What is the 4D stages?</li>
+        <li>What did we do in each stage?</li>
+      </ul>
+
+      <p>
+       We adopted a 4D (Discover, Define, Develop and Deliver) service design frame to organize the whole project. In the Discover and Define stages, studies were conducted to build student behavioral models and identified an opportunity field. In the Develop and Deliver stages, we used service design method as a persona, with Stake holder, System and custom journey maps to find touch points, designing and delivering solutions.
+      </p>
+      <img src="{% static 'portfolio/images/projects/ethu/review.png' %}" class="img-responsive" />
+    </section>
+
+    <section id="methodology">
+      <h2>Methodology and Approach</h2>
+      <section>
+        <h3>Research Method</h3>
+        <ul>
+          <li>Service design methods were used during the research and develop phrases</li>
+        </ul>
+        <p>
+          In the <strong>research process</strong>, we used structured questionnaires, interviews and observations to obtain first-hand information, gathering a wide range of information on students’ workday and weekend schedules, important agendas, one-day scenarios and comments (problems and complaints). Further, we investigated the usage ratio of public resources (such as internet and library, study room) during different time points. Based on these results, we concluded a behavioral model of resource usage among the student body. Furthermore, we identified an opportunity field for the service design project: Internet utilization.
+        </p>
+        <p>In the <strong>development process</strong>, in depth interviews, expert interviews, brainstorming and focus groups were conducted to raise ideas. We used service design methods to find solutions to specific issues from this research.
+        </p>
+      </section>
+
+      <section id="model">
+        <h3>Behavior Model</h3>
+        <p>
+          In our behavior model, a student’s resource-use behavior is affected by different factors. We classified these factors into: subjective factors, objective factors and external factors.
+          <ul>
+            <li>The <strong> subjective factors</strong> refer to personal preference such as familiarity, meaning people usually go to a place or choose to use resources that they are familiar with.</li>
+            <li>The <strong>objective factors</strong> are obligations, such as the course requirements. For example, if students are required to do a group project they may be more likely to use the discussion room more often.
+            </li>
+            <li>The <strong>external factors</strong> are the factors that would moderate students’ behavior aside from the objective and subjective factors. For example, asymmetrical information accessibility, which refers to some students inability to recognize or use existing services. For example,Ipv6 services is much more stable and faster inside campus than the Ipv4 service, but only a few students know it and could use it properly.
+            </li>
+          </ul>
+        </p>
+        <img src="{% static 'portfolio/images/projects/ethu/discover.png' %}" class="img-responsive" />
+      </section>
+
+      <section id="opportunity">
+        <h3>Opportunity Field</h3>
+        <p>We evaluated all the student needs and categorized them according to importance and previous solutions with a focus on Internet utilization, largely required among the student body but still facing many unresolved issues.
+        </p>
+        <img src="{% static 'portfolio/images/projects/ethu/opportunity.png' %}" class="img-responsive" />
+      </section>
+    </section>
+
+    <section id="develop">
+      <h2>Development</h2>
+      <p>
+        To better illustrate the behavior patterns and demands of users, we used two personas, showing their typical one-day events. Stakeholder and system maps were used to analysis and illustrate resource allocation, in addition to the relationship between stakeholders and back stage administration.
+        <ul>
+          <li>User: we collected <strong>“typical day schedules” </strong> from a variety of students with the two personas acting as representations of these students. We were especially interested in their priority set, on- line activities and the Internet flow usage according to each of their activities.
+          </li>
+          <li>
+            <strong>Stakeholder</strong>: we built a stakeholder map to illustrate the relationship between people and organizations associated with the campus Internet service.
+          </li>
+          <li>
+           <strong>System map</strong>: a system map was designed to illustrate Internet services, administrate systems and their interaction with users. We were especially interested in THU center server (THU cloud) Intra-network, Ipv6 and Ipv4 service.
+         </li>
+       </ul>
+      </p>
+      <img src="{% static 'portfolio/images/projects/ethu/develop.png' %}" class="img-responsive" />
+    </section>
+
+
+    <section id="solution">
+      <h2>Solution</h2>
+      <section>
+        <h3>Important Facts：</h3>
+        <p>
+          <ul>
+            <li>Internet is one of the most important aspects in students’ life. Students  need to obtain and share information on a collabrative platform.(objective and subjective factors)</li>
+            <li>Students have different priorities, whilst most students have preference to use internet services for downloading large files in the evening. This resulted in internet cogestion. (subjective factors)</li>
+            <li>Students will not always follow their order of priorities and therefore do not utilize the internet effectively. (subjective factors)</li>
+            <li>Students will change their behavior in relation to service costs. (money and time)</li>
+            <li>School provides a very good Intra-network service but only a few people use it. (external factor)</li>
+          </ul>
+          The solution aims to use external factors to solve problems first, which will not affect students’ preference and their demands. Futher, if the resources do not meet the needs of everyone, we will moderate towards students’ behavior based on subjective factors.
+          <img src="{% static 'portfolio/images/projects/ethu/solution.png' %}" class="img-responsive" />
+        </p>
+        <h3>Solutions:</h3>
+        <p>
+          <ul>
+            <li>A foolproof on-line platform for campus students.</li>
+            <li>Provide sharing, storage and collabrative working for students based on Intra-Networking. (external factor based sulotion)</li>
+            <li>Adaptive internet pricing system. Provide automatic downloading assitant, which  can help you download low priority files during leisure time.  (subjective factor based solution)</li>
+            <li>Four more specific function modules （see pic）</li>
+            <li>Front stage experience and back stage administration （see pic）</li>
+          </ul>
+          <img src="{% static 'portfolio/images/projects/ethu/delivery.png' %}" class="img-responsive" />
+        </p>
+      </section>
+
+      <section id="prototyping">
+        <h3>Usability Test and Prototyping</h3>
+        <p>
+          We carried out amock application and tested the interaction process. Further, we designed the whole ios client of this application.
+        </p>
+        <img src="{% static 'portfolio/images/projects/ethu/final.png' %}" class="img-responsive" />
+      </section>
+    </section>
+
+    <hr />
+    <section id="display">
+      <h3>Final Design</h3>
+      <div id="main-slider" class="carousel slider">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slider" data-slide-to="1"></li>
+          <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{% static 'portfolio/images/projects/ethu/example_1.png' %}"  class="img-responsive" />
+          </div>
+          <!--/.item-->
+          <div class="item">
+            <img src="{% static 'portfolio/images/projects/ethu/example_2.png' %}"  class="img-responsive" />
+          </div>
+          <!--/.item-->
+          <div class="item">
+            <img src="{% static 'portfolio/images/projects/ethu/example_3.png' %}" class="img-responsive" />
+          </div>
+          <!--/.item-->
+        </div>
+        <!--/.carousel-inner-->
+        <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+        <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+      </div>
+      <!--/#main-slider-->
+
+    </section>
+  </div>
+</section>
+
+<section id="project_footer">
+  <div id="footer_container">
+    <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+    <a href="#project_detail">&uarr; Back to Top</a>
+    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+  </div>
+</section>
 {% endblock %}
