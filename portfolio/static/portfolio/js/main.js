@@ -122,7 +122,6 @@ jQuery(function ($) {
         var headerImg = $('.header_img');
         var content = $('.project_detail');
         const opacity = Math.abs((content.offset().top - headerImg.offset().top) / headerImg.height());
-        console.log(opacity);
         headerImg.css('opacity', opacity);
     });
 
