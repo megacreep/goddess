@@ -8,173 +8,91 @@ The page is devided into two part, the left navigation and the right content.
 {% endcomment %}
 
 {% block project_detail %}
-  <section id="project_detail">
-    <div class="container">
-      <div class="row">
-        <div id="project_nav" class="col-sm-3">
-          <div class="nav-container">
-            <ul class="nav nav-pills nav-stacked nav-box">
-	      <li class="back">
-     		<a href="{% url 'portfolio:projects' %}">
-		  <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; Back to Projects
-		</a>
-	      </li>
-              <li class="active"><a href="#summary">Why LearnPar</a></li>
-              <li><a href="#background">Background</a></li>
-              <li><a href="#design">Design</a></li></ul>
-          </div>
-        </div>
-        <div id="content" class="col-sm-9">
-          <section id="abstract">
-            <h1>Social Cognition and Self Representation in Education</h1>
-            <div class="outline">
-              <h4> Project information</h4>
-              <div>
-                <ul>
-                  <li><strong>Organization:</strong>Tsinghua University</li>
-                  <li><strong>Independent work:</strong>Tianxin Yu</li>
-                  <li><strong>Area:</strong>education technology , social cognition, learning science</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+<section id="project_learnpar" class="project_detail">
+  <section class="project-header">
+    <div class="font-size-18 grey-4a" style="font-weight: 400;">
+      DESIGN IDEAS
+    </div>
+    <h1 class="grey-4a bold">LearnPar: Social Learning Design</h1>
+    <p>A mere belonging could raise persistence on domain-relevant tasks and the accessibility of relevant goals.</p>
+  </section>
 
-          <section id="summary">
-            <h3>Why LearnPar?</h3>
-            <ul>
-              <li>Why did I initiate this project?</li>
-            </ul>
-            <p>
-              I have a commitment to make education more accessible to children in the third world. The burst of online education and smart devices seem to suggest the possibility that everyone could have access to unlimited education resources. However, the real effect that such technologies  can bring us to us is far beyond our  expectations. For example, we have more than 10 MOOC platforms and hundreds of education websites in China, serving a variety of classes, but they all have one common factor - the extremely low pass rate. This made us rethink solutions to the issue of how education could be better delivered by new technologies.
-            </p>
-            <p>
-              I am especially interested in motivation and it’s link to education. Previous studies I carried out on academic burnout and coping behavior showed me that burnout could negatively predict  academic involvement, but this prediction was mediated by self-efficacy and moderated by social support.  After I studied design and stepped into the learning science field, I hoped to find solutions for motivating people in online learning environments.  This product concept is one of my attempts to tackle this problem.
-            </p>
-          </section>
-
-          <hr />
-          <section id="background">
-            <h3>Background</h3>
-            <p>
-              This idea stemmed from studies on social motivation and self-representation in online and offline behavior. Psychologists have proved that social interactions will evidently affect people’s learning behavior, with research suggesting that a mere belonging (a minimal social connection to another person or group in a performance domain) could raise persistence on domain-relevant tasks and the accessibility of relevant goals(Walton et. al, 2012). Further, previous research has shown that people infer their expected behaviors and attitudes from observing their avatar’s appearance in virtual environments (Nick Yee, Jeremy Baienson, 2009). Researchers have found that this could happen in an actual online community and result in real life behavior changes. This project is trying to create an online education application based on these findings, which could serve more children by means of smart devices.
-            </p>
-            <p>
-              However, the best method to achieve this goal is still uncertain. As you might see in the design concept, I have multiple selections for characters (similar to different experimental conditions.) as well as different kinds of reward. In fact, I hope to conduct experiments on which type and at what time these character can affect students’ learning behaviors and outcomes, namely, their involvement (time) and effectiveness (recognition rate).The application could be a way to collect data and extending the experiment to study real life impacts.
-            </p>
-          </section>
-
-          <hr />
-          <section id="design">
-            <section>
-              <h3>Design</h3>
-              <p>
-                Here is a design implication: <strong>LearnPar for vocabulary builder</strong>
-              </p>
-              <p>
-                I provide a scenario below. In this scenario, a 7 year old boy named Tom is using Learning Par to learn English, as his second language.
-              </p>
-              <div>
-                <ul>
-                  <li>
-                    <p>Relevant characters</p>
-                    <div>
-                      <p>I am interested in how different people and their relations to an individual can affect learning behavior. In this application, your self-relevant character could be:</p>
-                      <ol>
-                        <li>Yourself</li>
-                        <li>People you have intimate relations with： close friends  or lover</li>
-                        <li>Your  mentors：Parents or close instructors</li>
-                      </ol>
-                    </div>
-                    <img src="{% static 'portfolio/images/projects/learnpar/tomslist.png' %}" class="img-responsive" />
-                  </li>
-                  <li>
-                    <div>Emotional feedback and facial expressions</div>
-                    <p>
-                      Emotional expressions are used to provide feedback for users. I designed four types of emotional feedback regarding emotional valence and arousal. They are:
-                    </p>
-                    <ol>
-                      <li>positive feedbacks: for correct reactions and achievement.</li>
-                      <li>negative feedbacks: for  absent-mindedness</li>
-                      <li>neutral with low arousal: default</li>
-                      <li>neutral with high arousal: for wrong reactions</li>
-                  </ol>
-                  <img src="{% static 'portfolio/images/projects/learnpar/emotionalfeedback.png' %}" class="img-responsive" />
-                </li>
-                <li>
-                  <div>Social award</div>
-                  <p>
-                    This is a different kind of positive feedback related to your interactions with other people, in which r characters relevant to yourself benefit due to your achievements.
-                  </p>
-                  <p>
-                    Sample rewads:
-                    <img src="{% static 'portfolio/images/projects/learnpar/tomsgiftlist.png' %}" class="img-responsive" />
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section id="storyboard">
-            <h3>Story board </h3>
-            <p>
-              Here is a scenario in which a 10 year old boy uses LearnPar to learn new words. In this scenario, he chose his best friend Lily as his relevant character.
-            </p>
-            <img src="{% static 'portfolio/images/projects/learnpar/storyboard.png' %}" class="img-responsive" />
-            <img src="{% static 'portfolio/images/projects/learnpar/design.png' %}" class="img-responsive" />
-          </section>
-          </section>
-        </div>
-      </div>
+  <section class="abstract-container" style="justify-content: center;">
+    <div class="flexbox column" style="width: 80%;">
+      <h4 style="font-weight: bold;">WHY LearnPar?</h4>
+      <p>
+        The burst of online education and smart devices seem to suggest the possibility that everyone could have access to unlimited education resources. However, the real effect that such technologies can bring us to us is far beyond our expectations. For example, we have more than 10 MOOC platforms and hundreds of education websites in China, serving a variety of classes, but they all have one common factor - the extremely low pass rate. This made us rethink solutions to the issue of how education could be better delivered by new technologies.
+      </p>
+      <p>
+        I am especially interested in motivation and it’s link to learning. Previous studies I carried out on academic burnout and coping behavior showed me that burnout could negatively predict academic involvement, but this prediction was mediated by self-efficacy and moderated by social support. After I studied design and stepped into the learning science field, I hoped to find solutions for motivating people in online learning environments. This product concept is one of my attempts to tackle this problem.
+      </p>
     </div>
   </section>
-   <section id="projects_list">
-    <div class="container">
-      <div class="box">
-        <h4><strong>Other projects:</strong></h4>
-        <ul class="portfolio-items col-3">  {# The col-* class defines how many columns should be used for portfolio items #}
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_ethu' %}">
-                  <img src="{% static 'portfolio/images/projects/ethu/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/ethu/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>E-THU</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_treeme' %}">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/treeme/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>TreeMe</h5>
-            </div>
-          </li>
-          <!--/.portfolio-item-->
-          <li class="portfolio-item apps"> {# all the css classes other than portfolio-item are used for filtering #}
-            {# The filters are in projects.html #}
-            <div class="item-inner">
-              <div class="portfolio-image">
-                <a class="preview" href="{% url 'portfolio:projects_cmf' %}">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover.png' %}" alt="">
-                  <img src="{% static 'portfolio/images/projects/cmf/cover_hover.png' %}" class="hover" alt="">
-                </a>
-              </div>
-              <h5>CMF research tool</h5>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!--/.box-->
-    </div>
-    <!--/.container-->
+
+  <section id="background" class="project-section">
+    <h3>BACKGROUND</h3>
+    <p>
+      This idea stemmed from studies on social motivation and self-representation in online and offline behavior. Psychologists have proved that social interactions will evidently affect people’s learning behavior, with research suggesting that a mere belonging (a minimal social connection to another person or group in a performance domain) could raise persistence on domain-relevant tasks and the accessibility of relevant goals(Walton et. al, 2012). Further, previous research has shown that people infer their expected behaviors and attitudes from observing their avatar’s appearance in virtual environments (Nick Yee, Jeremy Baienson, 2009). Researchers have found that this could happen in an actual online community and result in real life behavior changes. This project is trying to create an online education application based on these findings, which could serve more children by means of smart devices.
+    </p>
+    <p>
+      However, the best method to achieve this goal is still uncertain. As you might see in the design concept, I have multiple selections for characters (similar to different experimental conditions.) as well as different kinds of reward. Further experiements and user research may focus on which type and at what time these character can affect students’ learning behaviors and outcomes, namely, their involvement (time) and effectiveness (recognition rate).The application could be a way to collect data and extending the experiment to study real life impacts.
+    </p>
+
+    <h3>DESIGN CONCEPTS</h3>
+    <p>
+      Here is a design implication: <strong>LearnPar for vocabulary builder</strong>
+    </p>
+
+    <p>
+      I provide a scenario below. In this scenario, a 10 year old boy named Tom is using LearnPar to learn English as his second language.
+    </p>
+    <img src="{% static 'portfolio/images/projects/learnpar/storyboard.png' %}" class="img-responsive" 
+    style="width: 80%; align-self: center; margin: 12px 0;"/>
+
+    <p>
+      The key design components for learning include the users' relevant characters - people who can have an impact on their motivation. In this application, your self-relavant characters could be:
+      <ul>
+        <li><strong>Yourself</strong></li>
+        <li>People you have <strong>intimate relations</strong> with, i.e. close friends</li>
+        <li><strong>Your mentors</strong>: Parents or close instructors</li>
+      </ul>
+    </p>
+
+    <img src="{% static 'portfolio/images/projects/learnpar/tomslist.png' %}" class="img-responsive" 
+    style="width: 80%; align-self: center; margin: 12px 0;"/>
+
+    <p>
+      <strong>Emotional Feedback</strong><br />
+      Emotional expressions are used to provide feedback for users. I designed four types of emotional feedback regarding emotional valence and arousal. They are:
+      <ul>
+        <li><strong>Positive feedbacks</strong>: for correct reactions and achievements.</li>
+        <li><strong>Negative feedbacks</strong>: for absent-mindedness.</li>
+        <li><strong>Neutral with low arousal</strong>: default.</li>
+        <li><strong>Neutral with high arousal</strong>: for wrong reactions.</li>
+      </ul>
+    </p>
+
+    <img src="{% static 'portfolio/images/projects/learnpar/emotionalfeedback.png' %}" class="img-responsive" 
+    style="width: 80%; align-self: center; margin: 12px 0;"/>
+
+    <p>
+      <strong>Social Awards</strong><br />
+      This is a different kind of positive feedback related to your interactions with other people, in which characters relevant to yourself benefit due to your achievements.
+    </p>
+
+    <img src="{% static 'portfolio/images/projects/learnpar/tomsgiftlist.png' %}" class="img-responsive" 
+    style="width: 80%; align-self: center; margin: 12px 0;"/>
+
+    <p>
+      <strong>Sample Sketches</strong><br />
+      This is a different kind of positive feedback related to your interactions with other people, in which characters relevant to yourself benefit due to your achievements.
+    </p>
+
+    <img src="{% static 'portfolio/images/projects/learnpar/design.png' %}" class="img-responsive" 
+    style="width: 80%; align-self: center; margin: 12px 0;"/>
+
   </section>
- 
+
+</section>
+
 {% endblock %}

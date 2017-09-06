@@ -81,6 +81,10 @@ def project_tune(request):
     return render(request, 'portfolio/project_tune.html')
 
 
+def project_dataviz(request):
+    return render(request, 'portfolio/project_dataviz.html')
+
+
 def project_renaissance(request):
     return render(request, 'portfolio/project_renaissance.html')
 

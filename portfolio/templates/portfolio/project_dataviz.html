@@ -1,0 +1,186 @@
+{% extends 'portfolio/projects_list.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block project_detail %}
+
+<img src="{% static 'portfolio/images/projects/dataviz/header.png' %}" class="header_img" >
+<img src="{% static 'portfolio/images/projects/dataviz/header.png' %}" class="header_img_shadow" >
+
+<section id="project_dataviz" class="project_detail">
+  <section class="project-header">
+    <div class="font-size-18 grey-4a" style="font-weight: 400;">
+      TELL FROM THE DATA
+    </div>
+    <h1 class="grey-4a bold">Monitoring Student Stress</h1>
+    <p>Data Mining and VVisualization of the StudentLife Dataset.</p>
+  </section>
+
+  <section class="abstract-container">
+    <div class="abstract-left">
+      <h4>BACKGROUND</h4>
+      <p>
+        A large percentage of college students experience high stress levels. At CMU, more than 80% of students experienced overwhamleming during the spring semester 2017. High levels of stress of college students have the potential to undermine their mental and physical health. What factors can affect the stress level of college students? How can we monitor and predict student stress level and hence to help them proactive coping? To answer those questions, our team analyzed, visulizied, and built a machine learning prediction model based on StudentLife dataset.
+      </p>
+    </div>
+    <div class="abstract-right">
+      <div class="abstract-list">
+        <h4>MY ROLE</h4> <span>&nbsp; 2017.02 - 2017.08</span>
+        <ul>
+          <li>Data Cleaning</li>
+          <li>Data Mining and Visualization</li>
+        </ul>
+      </div>
+
+      <div class="abstract-list">
+        <h4>SKILLS</h4>
+        <ul>
+          <li>Matlab</li>
+          <li>Wrangler | Weka</li>
+          <li>Data Visualization with D3</li>
+          <li>StoryTelling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-section">
+    <div class="section-title-container">
+      <div class="section-title-seq">
+        1
+      </div>
+      <div class="section-title-right">
+        <h2>PROJECT SUMMARY</h2>
+        <div>The Problem and Our Goal</div>
+      </div>
+    </div>
+
+    <h3>
+      THE PROBLEM
+    </h3>
+    <p>
+      A large percentage of college students experience high-stress levels. These high levels of stress of college students have the potential to undermine their mental and physical health. From a student’s perspective, a student may be aware of their stress status, but don't know the real factors causing stress. Also, a student might have knowledge of their own stress experience but is not exposed to the complexities of the experiences of our peers.    
+    </p>
+
+    <div class="quote-container">
+      <div class="quote">
+        "There are just too many factors that results in stress. It's hard to tell where to start"
+      </div>
+      <div class="author">
+        -- A College Student on Stress Coping
+      </div>
+    </div>
+
+    <p>
+      How can we help students and people who care about them understand their stress status and the potential strategies for stress coping at an individual level?
+    </p>
+    <img src="{% static 'portfolio/images/projects/dataviz/cover.png' %}" class="img-responsive normal-img" style="margin-bottom: 48px;">
+
+    <h3>
+      OUR GOAL
+    </h3>
+    <p>
+      We believe understanding and visualizing student behavior patterns related to stress can better inform students and associated stakeholders. We chose the StudentLife Dataset, which contains data collected from 48 undergraduate and graduate students at Dartmouth, to find common student patterns, form the stress model, and test our model that associated with high levels of stress.  For example, do students tend to sleep less and work out less when they report high levels of stress? Do students who self-claim as very anxious people report high levels of stress more often? What factors are likely to cause a student to be stressed? 
+    </p>
+    <p>
+      Identifications and predictions of these factors would help students to be aware the impact of their personality and behavior patterns on their stress levels so that they can proactively adjust their behavior and seek help promptly. This effort can also allow university staff and health advocates to understand students' high-stress behaviors to offer support. Finally, this allows empathy: students can better identify and understand stress behaviors of their classmates.
+    </p>
+  </div>
+
+  <div class="section-background" style="background-color: rgba(127, 205, 187, 0.1); margin-top: 64px;">
+    <div class="project-section">
+      <div class="section-title-container">
+        <div class="section-title-seq">
+          2
+        </div>
+        <div class="section-title-right">
+          <h2>WHAT THE DATA SAY</h2>
+          <div>Data Mining and Visualization</div>
+        </div>
+      </div>
+
+      <img src="{% static 'portfolio/images/projects/dataviz/1.png' %}" class="img-responsive normal-img" style="margin: 48px 0;"/>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>ABOUT THE DATA</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi enim satis est, ipsis non satis. Simus igitur contenti his. Duo Reges: constructio interrete. Non autem hoc: igitur ne illud quidem. Res enim se praeclare habebat, et quidem in utraque parte. Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus; Quis istud possit, inquit, negare? Ergo, si semel tristior effectus est, hilara vita amissa est? Tum ille: Ain tandem? Nec mihi illud dixeris: Haec enim ipsa mihi sunt voluptati, et erant illa Torquatis.
+    </p>
+    <img src="{% static 'portfolio/images/projects/tune/2.png' %}" class="img-responsive"
+      style="width: 80%; align-self: center; margin: 12px 0;">
+
+    <p>
+    Nonne igitur tibi videntur, inquit, mala? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Non est igitur voluptas bonum. Est enim effectrix multarum et magnarum voluptatum. Istam voluptatem perpetuam quis potest praestare sapienti? Si longus, levis; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Non quam nostram quidem, inquit Pomponius iocans;
+    </p>
+
+    <div class="quote-container">
+      <div class="quote">
+        "We designed motor activites that target on different skills with multiple challenge levels."
+      </div>
+      <div class="author">
+        -- An intervention specialist
+      </div>
+    </div>
+
+    <p>
+      Nonne igitur tibi videntur, inquit, mala? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Non est igitur voluptas bonum. Est enim effectrix multarum et magnarum voluptatum. Istam voluptatem perpetuam quis potest praestare sapienti? Si longus, levis; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Non quam nostram quidem, inquit Pomponius iocans;
+    </p>
+
+    <div class="quote-container">
+      <div class="quote">
+        "We designed motor activites that target on different skills with multiple challenge levels."
+      </div>
+      <div class="author">
+        -- An intervention specialist
+      </div>
+    </div>
+
+    <p>
+      Nonne igitur tibi videntur, inquit, mala? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Non est igitur voluptas bonum. Est enim effectrix multarum et magnarum voluptatum. Istam voluptatem perpetuam quis potest praestare sapienti? Si longus, levis; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Non quam nostram quidem, inquit Pomponius iocans;
+    </p>
+
+    <h3>EXPERIMENT (ACCESSIBILITY RESEARCH)</h3>
+    <p>
+      Nonne igitur tibi videntur, inquit, mala? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Non est igitur voluptas bonum. Est enim effectrix multarum et magnarum voluptatum. Istam voluptatem perpetuam quis potest praestare sapienti? Si longus, levis; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Non quam nostram quidem, inquit Pomponius iocans;
+    </p> 
+
+    <div class="bullet-point">Find the perfect fit.</div>
+
+    <p>An hoc usque quaque, aliter in vita? Hoc non est positum in nostra actione.</p>
+    <img src="{% static 'portfolio/images/projects/tune/2.png' %}" class="img-responsive"
+      style="width: 80%; align-self: center; margin: 12px 0;">
+    <p>
+      Nonne igitur tibi videntur, inquit, mala? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Non est igitur voluptas bonum. Est enim effectrix multarum et magnarum voluptatum. Istam voluptatem perpetuam quis potest praestare sapienti? Si longus, levis; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Non quam nostram quidem, inquit Pomponius iocans;
+    </p>
+  </div>
+
+  <div class="section-background" style="height: 400px; background-color: #F2F2F2; margin-top: 64px;">
+    <div class="project-section">
+      <div class="section-title-container">
+        <div class="section-title-seq">
+          3
+        </div>
+        <div class="section-title-right">
+          <h2>DESIGN IDEATION &amp; VALIDATE</h2>
+          <div>Fail Fast, Move Fast</div>
+        </div>
+      </div>
+
+      <p>
+        In developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind childreIn developing countries, less than 10 percent of blind chircent of blind childreIn developing countries, less than 10 percent of blind childre
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section id="project_footer">
+  <div id="footer_container">
+    <a href="{% url 'portfolio:projects_tune' %}">&larr; Prev Project</a>
+    <a href="#project_detail">&uarr; Back to Top</a>
+    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+  </div>
+</section>
+{% endblock %}
