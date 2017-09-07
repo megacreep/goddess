@@ -1,7 +1,7 @@
 .project-header {
   display: flex;
   flex-direction: column;
-  padding: 24px 15%;
+  padding: 64px 15%;
   text-align: center;
 }
 
@@ -173,6 +173,10 @@ h5.bullet-point {
 	}
 }
 
+.link-underline:hover {
+	border-bottom: thin solid #08B3B3;
+}
+
 .icon-label-container {
   display: flex;
   align-items: center;
@@ -190,10 +194,6 @@ h5.bullet-point {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.textbox strong {
-	margin-bottom: 8px;
 }
 
 .textbox strong {
@@ -319,8 +319,6 @@ body.embed a.powered-by {
 	border-left-color: #7FCDBB;
 }
 
-#project_dataviz .bullet-point:before
-
 
 /*              Tune                */
 #project_tune .project-section h3:before {
@@ -354,6 +352,26 @@ body.embed a.powered-by {
 }
 
 
+/*              climate monitor               */
+#project_climate .project-section h3:before {
+	content: " ";
+	margin-right: 8px;
+	border-left: 18px solid #08B3B3;
+}
+
+#project_climate .section-title-right h2 {
+	color: #08B3B3;
+}
+
+#project_climate .bullet-point:before,
+#project_climate .section-title-seq {
+	background-color: #08B3B3;
+	color: white;
+}
+
+#project_climate .quote-container {
+	border-left-color: #08B3B3;
+}
 
 
 .header_img {
