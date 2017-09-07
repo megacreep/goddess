@@ -120,6 +120,9 @@ jQuery(function ($) {
 
     $(window).on('scroll', function(event) {
         var headerImg = $('.header_img');
+        if (!headerImg.length) {
+            return;
+        }
         var content = $('.project_detail');
         var header = $('.nav-in-project');
         let opacity = Math.max(0, (content.offset().top - headerImg.offset().top) / headerImg.height());

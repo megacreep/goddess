@@ -3,20 +3,50 @@
 {% load i18n %}
 
 {% block project_detail %}
-<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img" >
-<img src="{% static 'portfolio/images/projects/tune/header.png' %}" class="header_img_shadow" >
+<img src="{% static 'portfolio/images/projects/capstone/header.png' %}" class="header_img" >
+<img src="{% static 'portfolio/images/projects/capstone/header.png' %}" class="header_img_shadow" >
 
 <section id="project_renaissance" class="project_detail">
-  <section id="abstract">
-    <img src="{% static 'portfolio/images/projects/tune/icon.png' %}">
-    <h1>Star Agent: Empowering Teacher with Data</h1>
-    <div class="outline">
-      <ul>
-        <li><strong>Client:</strong> Renaissance Learning</li>
-        <li><strong>Time:</strong>2017.02 - 2017.08,  Product Shipped</li>
-        <li><strong>My Role:</strong>UX Research Lead, Product Designer</li>
-        <li><strong>Skills:</strong>UX Research | Graphic Design | Product Design | Data Visualization</li>
-      </ul>
+  <section class="project-header">
+    <div class="font-size-18 grey-4a" style="font-weight: 400;">
+      DESIGN FOR LEARNING
+    </div>
+    <h1 class="grey-4a bold">Empowering Teachers With Data</h1>
+    <p>
+      Leveraging a data driven approch for pedegagical decision making.
+    </p>
+  </section>
+
+  <section class="abstract-container">
+    <div class="abstract-left">
+      <h4>BACKGROUND</h4>
+      <p>
+        During 2013 - 2014, I was working on haptic perception research and tangible interaction design at Microsoft Research Asia. One of my research interest is how people with visual impairment perceive differently from normally developed ones. To answer this question, I engaged with visually impaired people from different, from special education school to local massage shops. Shortly, I learned about that early training for rehabilitation is neither affordable nor effective for most of them, which results in a host of problems in their later life. 
+      </p>
+      <p>
+        In the following year, I initiated a project to design an affordable and ready-to-use product to help blind kid practice motor skills. Working with a hardware engineer and an industrial designer, we created Tune, a motor skill training belt. This product has been designed, prototyped, and put into clinical experiments now. 
+      </p>
+    </div>
+    <div class="abstract-right">
+      <div class="abstract-list">
+        <h4>MY ROLE</h4> <span>&nbsp; 2015.05 - </span>
+        <ul>
+          <li>Project Lead</li>
+          <li>Researcher</li>
+          <li>UI &amp; UX Designer</li>
+        </ul>
+      </div>
+
+      <div class="abstract-list">
+        <h4>SKILLS</h4>
+        <ul>
+          <li>Product Design</li>
+          <li>Interaction Design</li>
+          <li>User Study</li>
+          <li>Experiment Design and Coding</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -26,7 +56,8 @@
         1
       </div>
       <div class="section-title-right">
-        <h2>Background</h2>
+        <h2>PROJECT SUMMARY</h2>
+        <div>The Problem and Solutions</div>
       </div>
     </div>
 
@@ -59,9 +90,15 @@
 
 <section id="project_footer">
   <div id="footer_container">
-  <a href="{% url 'portfolio:projects_tune' %}" style="visibility: hidden;">&larr; Prev Project</a>
-    <a href="#project_renaissance">&uarr; Back to Top</a>
-    <a href="{% url 'portfolio:projects_tune' %}">&rarr; Prev Project</a>
+    <a href="{% url 'portfolio:projects_tune' %}" class="disabled-link">
+      <img src="{% static 'portfolio/images/projects/footer_left.png' %}" style="height:auto; width: 100px;">
+    </a>
+    <a href="{% url 'portfolio:index' %}">
+      <img src="{% static 'portfolio/images/projects/footer_home.png' %}" style="height:100px; width: 100px;">
+    </a>
+    <a href="{% url 'portfolio:projects_tune' %}">
+      <img src="{% static 'portfolio/images/projects/footer_right.png' %}" style="height:auto; width: 100px;">
+    </a>
   </div>
 </section>
 {% endblock %}

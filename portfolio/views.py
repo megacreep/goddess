@@ -77,8 +77,13 @@ def project_ureveal(request):
     return render(request, 'portfolio/project_ureveal.html')
 
 
+def project_climate(request):
+    return render(request, 'portfolio/project_climate.html')
+
+
 def project_tune(request):
     return render(request, 'portfolio/project_tune.html')
+
 
 
 def project_dataviz(request):

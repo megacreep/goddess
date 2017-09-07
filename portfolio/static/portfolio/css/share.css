@@ -9,3 +9,20 @@
 .bold {
   font-weight: bold;
 }
+
+.margin-top-big {
+	margin-top: 64px;
+}
+
+.margin-top-medium {
+	margin-top: 48px;
+}
+
+.gap {
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+.color-red {
+	background-color: #D0021B;
+}

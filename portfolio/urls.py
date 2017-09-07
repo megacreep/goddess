@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^projects_cmf/$', views.project_cmf, name='projects_cmf'),
     url(r'^projects_ureveal/$', views.project_ureveal, name='projects_ureveal'),
     url(r'^projects_tune/$', views.project_tune, name='projects_tune'),
+    url(r'^projects_climate/$', views.project_climate, name='projects_climate'),
     url(r'^projects_dataviz/$', views.project_dataviz, name='projects_dataviz'),
     url(r'^projects_renaissance/$', views.project_renaissance, name='projects_renaissance'),
     url(r'^footprint/$', views.footprint, name='footprint'),
