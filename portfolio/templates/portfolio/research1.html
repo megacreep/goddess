@@ -1,390 +1,85 @@
 {% extends 'portfolio/base.html' %}
-
+{% load staticfiles %}
+{% load i18n %}
 {% block content %}
-  <section id="research1">
+<div class="flexbox center header">
+  <div class="container">
+    <div id="navbar" class="navbar navbar-default vertical-center">
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'portfolio:index' %}">PORTFOLIO.</a></li>
+          <li><a href="{% url 'portfolio:about' %}">ABOUT ME.</a></li>
+          <li>
+            <a href="https://drive.google.com/file/d/0B11ZiMRffQnPbFJXY3lBaVRJVkU/view?usp=sharing" target="_blank">
+              RESUME.
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section id="research">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="nav-container">
-              <ul class="nav nav-pills nav-stacked nav-box">
-                <li class="active"><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-                <li class="nav-submenu"><a href="#section41">Section 4-1</a></li>
-                <li class="nav-submenu"><a href="#section42">Section 4-2</a></li>
-              </ul>
-            </div>
+      <section class="slogan">
+        <div class="row">
+          <div class="col-sm-12">
+            <span class="yellow">>></span> I Research to Understand.
+          </div>
         </div>
-        <div id="content" class="col-sm-9">
-          <section id="section1">
-            <h1>Section 1</h1>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </section>
-          <section id="section2">
-            <h1>Section 2</h1>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </section>
-          <section id="section3">
-            <h1>Section 3</h1>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </section>
-          <section id="section4"></section>
-          <section id="section41">
-            <h1>Section 4-1</h1>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </section>
-          <section id="section42">
-            <h1>Section 4-2</h1>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </section>
+      </section>
+
+      <div class="box">
+        <div class="research-item">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3><strong>Tactile pattern design and recognition</strong></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 outline vcenter">
+              <div>
+                <ul>
+                  <li><strong>Organization:</strong>Peking University</li>
+                  <li><strong>Time:</strong>2014.1-6</li>
+                  <li><strong>Advisor:</strong>Kunlin Wei, Qining Wang</li>
+                  <li><strong>Type:</strong>Cooperate with Kebin Yuan </li>
+                  <li><strong>Fund:</strong>National Science Foundation</li>
+                </ul>
+              </div>
+            </div><!--
+          --><div class="col-sm-6 vcenter">
+              <div id="slider-3" class="slider carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators"> -->
+                  <!-- <li data-target="#slider-3" data-slide-to="0" class="active"></li> -->
+                <!-- </ol> -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                        <img src="{% static 'portfolio/images/research/r3p1.png' %}"  class="img-responsive" />
+                  </div>
+                  <!--/.item-->
+                </div>
+                <!--/.carousel-inner-->
+                <!-- <a class="prev" href="#slider-3" data-slide="prev"><i class="icon-angle-left"></i></a> -->
+                <!-- <a class="next" href="#slider-3" data-slide="next"><i class="icon-angle-right"></i></a> -->
+              </div>
+              <!--/#slider-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12" id="content">
+              <p>
+                This study presents the preliminary exploration of a sensory feedback system for providing Center of Pressure (CoP) feedback to amputees. The CoP dis- placements in mediolateral (ML) and anterior-posterior (AP) directions are classified into different directional patterns, and we expressed these patterns with combinations of four pancake vibrators placed around the thigh. A pilot test was performed first to determine the stimulation threshold value that could be perceivable by the subjects. Two experiments including location and amplitude discrimination were then performed to determine the best stimulation parameters for pattern discrimination,  and the average accurate recognition rates of 12 subjects were 99.3% and 97.7%, respectively. Based on the determined parameters, pattern discrimination experiments were performed to discriminate 12 patterns with different directional cueing, and experiments with 7 subjects achieved an accurate recognition rate of 95.4%.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!--/#projects-->
+
+
 {% endblock %}

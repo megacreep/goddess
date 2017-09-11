@@ -1,0 +1,88 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+<div class="flexbox center header">
+  <div class="container">
+    <div id="navbar" class="navbar navbar-default vertical-center">
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'portfolio:index' %}">PORTFOLIO.</a></li>
+          <li><a href="{% url 'portfolio:about' %}">ABOUT ME.</a></li>
+          <li>
+            <a href="https://drive.google.com/file/d/0B11ZiMRffQnPbFJXY3lBaVRJVkU/view?usp=sharing" target="_blank">
+              RESUME.
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="research">
+  <div class="container">
+    <section class="slogan">
+      <div class="row">
+        <div class="col-sm-12">
+          <span class="yellow">>></span> I Research to Understand.
+        </div>
+      </div>
+    </section>
+
+    <div class="box">
+      <div class="research-item">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3><strong>Possible selves, academic burnout and proactive coping among migrant students</strong></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 outline vcenter">
+            <div>
+              <ul>
+                <li><strong>Organization:</strong>Peking University</li>
+                <li><strong>Time:</strong>2011-2013</li>
+                <li><strong>Advisor:</strong>Yiqun Gan</li>
+                <li><strong>Type:</strong>Independent study</li>
+                <li>
+                  <strong>Fund:</strong>
+                  10000RMB, China’s National Innovation Fund for College Students, National Education Department
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 vcenter">
+            <div id="slider-1" class="slider carousel">
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators"> -->
+            <!-- <li data-target="#slider-1" data-slide-to="0" class="active"></li> -->
+            <!-- </ol> -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="{% static 'portfolio/images/research/r1p1.png' %}"  class="img-responsive" />
+                </div>
+                <!--/.item-->
+              </div>
+              <!--/.carousel-inner-->
+              <!-- <a class="prev" href="#slider-1" data-slide="prev"><i class="icon-angle-left"></i></a> -->
+              <!-- <a class="next" href="#slider-1" data-slide="next"><i class="icon-angle-right"></i></a> -->
+            </div>
+            <!--#slider-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" id="content">
+           <p>
+              This study is aimed to examine the association between academic possible selves and proactive coping behavior among elementary school children. We assume that the cognitive and emotional changes that possible selves bring to children might affect their proactive coping behavior. The first study used laboratory priming and a structured intervention to help students examine their possible selves. The experiment group had a more positive and detailed possible selves. After the intervention, students were required to take social implicit cognition tests regarding their attitude towards school education. The study found that academic burnout among the experiment group (N=92) was significantly lower than the control group, as well as that their implicit attitude toward school education was more positive. To further explore the long-term effect of this intervention, and its association with proactive coping behaviors, we conducted cross-sectional research based on self-reported surveys. 142 student from migrant families participated in this one year study. Results from Structural Equations Modeling (SEM) support a mediating model in which 1) academic burnout could negatively predict their coping behavior, 2) Mediation effect analysis showed that this prediction was full mediated by self-efficacy, and 3) Social support could partially moderate this prediction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#projects-->
+
+
+{% endblock %}
