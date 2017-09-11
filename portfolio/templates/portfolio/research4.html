@@ -1,0 +1,87 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+<div class="flexbox center header">
+  <div class="container">
+    <div id="navbar" class="navbar navbar-default vertical-center">
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'portfolio:index' %}">PORTFOLIO.</a></li>
+          <li><a href="{% url 'portfolio:about' %}">ABOUT ME.</a></li>
+          <li>
+            <a href="https://drive.google.com/file/d/0B11ZiMRffQnPbFJXY3lBaVRJVkU/view?usp=sharing" target="_blank">
+              RESUME.
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="research">
+  <div class="container">
+    <section class="slogan">
+      <div class="row">
+        <div class="col-sm-12">
+          <span class="yellow">>></span> I Research to Understand.
+        </div>
+      </div>
+    </section>
+
+    <div class="box">
+      <div class="research-item">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3><strong>Studies on illusions elicited by sequences of vibrotactile stimulators</strong></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 outline vcenter">
+            <div>
+              <ul>
+                <li><strong>Organization:</strong>Peking University</li>
+                <li><strong>Time:</strong>2013.1-6</li>
+                <li><strong>Advisor:</strong>Kunlin Wei</li>
+                <li><strong>Type:</strong>Independent study</li>
+              </ul>
+            </div>
+          </div><!--
+        --><div class="col-sm-6 vcenter">
+            <div id="slider-2" class="slider carousel">
+              <!-- Indicators -->
+              <!-- <ol class="carousel-indicators"> -->
+                <!-- <li data-target="#slider-2" data-slide-to="0" class="active"></li> -->
+              <!-- </ol> -->
+              <div class="carousel-inner">
+                <div class="item active">
+                      <img src="{% static 'portfolio/images/research/r2p1.png' %}"  class="img-responsive" />
+                </div>
+                <!--/.item-->
+              </div>
+              <!--/.carousel-inner-->
+              <!-- <a class="prev" href="#slider-2" data-slide="prev"><i class="icon-angle-left"></i></a> -->
+              <!-- <a class="next" href="#slider-2" data-slide="next"><i class="icon-angle-right"></i></a> -->
+            </div>
+            <!--/#slider-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" id="content">
+            <p>
+              Sensory substitution systems, by captivating neural plasticity, can provide individuals sensory information via a sensory channel different from the channel normally used. This "substituted" sensory information can benefit people with various types of sensory deficiency. Vibrotactile stimulators are widely used in tactile sensory substitution. However, tactile perception is prone to various potential illusions, especially when there are multiple stimuli sources presented in spatiotemporal vicinity. The present study employed psychophysical methods to investigate three illusions elicited by an array of vibrotactile stimulators. Our study consisted of 4 experiments to evaluate vibrotactile perception on the forearm. In Experiment 1, a forced-choice method was used to investigate the effects of stimulus duration, (physic) distance and stimulus-onset asynchrony (SOA) on the numeration of multiple stimuli presented in a sequence. We found that the physical distance between stimuli had no significant effect; instead, the perceived number of stimuli was positively correlated with SOA and the ratio between SOA and duration (I/D). In Experiment 2 to 4, we used an array of three stimulators to investigate how the perception of stimulus numeration, position and magnitude is modulated by I/D levels. In Experiment 2, we measured the psychophysical curve between I/D and the perceived number of stimulus and derived the linear relationship between them. Experiment 3 adopted the same experimental protocol as Experiment 2 but used a virtual-position learning paradigm to investigate the positional illusion, i.e., the location biased of perceived stimulus. We demonstrated that I/D had significant and systematic effects on this illusion, in addition to the biased numeration effect. Experiment 4 took this one step further and used a pressure-sensitive tablet to study the influence of I/D on masking effect. We identified that participants experienced both positional illusions and biased perception of stimulus magnitude.
+            </p>
+            <p>
+              Our study systematically investigated and quantified diverse illusions induced by arrays of vibrotactile stimulators with (or by varying) varying spatiotemporal relationship. Our findings provided a solid psychophysical foundation for designing vibrotactile sensory substitution systems.              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#projects-->
+
+
+{% endblock %}

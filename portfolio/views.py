@@ -97,12 +97,23 @@ def project_renaissance(request):
 def footprint(request):
     return render(request, 'portfolio/footprint.html')
 
+
 def research1(request):
     return render(request, 'portfolio/research1.html')
 
 
 def research2(request):
-    return render(request, 'portfolio/research_demo.html')
+    return render(request, 'portfolio/research2.html')
+
+
+def research3(request):
+    return render(request, 'portfolio/research3.html')
+
+
+def research4(request):
+    return render(request, 'portfolio/research4.html')
+
+
 
 
 def send_email(request):

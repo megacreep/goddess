@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^research1/$', views.research1, name="research1"),
     url(r'^research2/$', views.research2, name="research2"),
+    url(r'^research3/$', views.research3, name="research3"),
+    url(r'^research4/$', views.research4, name="research4"),
     url(r'^send_email/$', views.send_email, name="send_email"),
 ]
 
