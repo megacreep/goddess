@@ -247,6 +247,28 @@ h5.bullet-point {
 	font-weight: lighter;
 }
 
+.round-seq {
+	height: 48px;
+	width: 48px;
+	border-radius: 30px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: black;
+	font-weight: bolder;
+	margin-right: 24px;
+}
+
+
+
+
+
+
+
+
+
 #project_footer {
 	display: flex;
 	flex-direction: row;
@@ -340,17 +362,19 @@ body.embed a.powered-by {
 #project_renaissance .project-section h3:before {
 	content: " ";
 	margin-right: 8px;
-	border-left: 18px solid  #BB312C;
+	border-left: 18px solid  #9086C5;
 }
-
 #project_renaissance .section-title-right h2 {
-	color: #BB312C;
+	color: #9086C5;
 }
 
+#project_renaissance .bullet-point:before,
 #project_renaissance .section-title-seq {
-	background-color: #BB312C;
+	background-color: #9086C5;
 }
-
+#project_renaissance .quote-container {
+	border-left-color: #9086C5;
+}
 
 /*              climate monitor               */
 #project_climate .project-section h3:before {
