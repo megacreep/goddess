@@ -373,6 +373,13 @@ body.embed a.powered-by {
 	border-left-color: #08B3B3;
 }
 
+/*         footprint                     */
+#project_footprint .project-section h3:before {
+	content: " ";
+	margin-right: 8px;
+	border-left: 18px solid  #F8D81C;
+}
+
 
 .header_img {
 	width: 100%;

@@ -3,56 +3,47 @@
 {% load i18n %}
 
 {% block project_detail %}
-<section id="project_detail" class="project_detail">
+<section id="project_footprint" class="project_detail">
+
+  <section class="project-header">
+    <div class="font-size-18 grey-4a" style="font-weight: 400;">
+      DATA VISUALIZATION
+    </div>
+    <h1 class="grey-4a bold">Footprint: Monitor My Daily Routine</h1>
+    <p>
+    My hear is always in the work (CMU motto), but my body needs to go home...
+    </p>
+  </section>
+
+  <section class="abstract-container" style="justify-content: center;">
+    <div class="flexbox column" style="width: 80%;">
+      <h4 style="font-weight: bold;">A Fact About CMU Students (Myself included)</h4>
+      <p>
+        How late do CMU students stay on campus? What is the average sleep time? 
+      </p>
+      <p>
+        Earlier this year, I was helping Professor David Creswell from psychology department clean and visualize student data on lifestyle. They collected sleep data from 170 CMU first-year students across the spring semester 2017. The data showed that more than half of the students had at least stayed on campus until midnight for a few times, which is pretty common among my cohort too. But this is not the most impressive result. The data also showed that CMU students went to bed around 1:30 am on average and got up around 9:00 am - Perfectly 7.5 hours of sleep in a not-so-healthy way. And I realized I’ve been a typical example.
+      </p>
+    </div>
+  </section>
+
   <div class="project-section">
-    <div class="section-title-container">
-      <div class="section-title-seq">
-        1
-      </div>
-      <div class="section-title-right">
-        <h2>Guiding Question</h2>
-      </div>
-    </div>
-    <p> 
-      As we all know, life at CMU is very busy and full of hard work. Most of our time is either at home or campus. Also, a lot of people stay late and leave the campus at midnight, which is very unhealthy. We all want to change our lifestyle to a healthy pattern. However, we may not be aware of our daily life and find excuses for ourselves as "It will be the last time I go home this late." or "I will go out and relax a little bit this weekend." In most cases, it is no more than a placebo. So, in this project byte, I want to collect my location data for the whole month and monitor my daily activities. I hope to know my "footprints" in Pittsburgh in terms of sequential geometry information, accumulated data, and data segments by the time period during the day.   
-    </p>
-
-    <div class="section-title-container">
-      <div class="section-title-seq">
-        2
-      </div>
-      <div class="section-title-right">
-        <h2>Data Quality</h2>
-      </div>
-    </div>
-    <h4>Completeness </h4>
-    <p> 
-      I think the data completeness is fairly good. I accessed my dataset by looking into how much data points I have collected per day and their time distribution. 
+    <h3>BACKGROUND</h3>
+    <p>
+      As we all know, life at CMU is hectic and full of hard work. Most of our time is either at home or campus. Also, a lot of people stay late and leave the campus at midnight, which is very unhealthy. We all want to change our lifestyle to a healthy pattern. However, we may not be aware of our daily life and find excuses for ourselves as "It will be the last time I go home this late." or "I will go out and relax a little bit this weekend." In most cases, it is no more than a placebo. So, in this project byte, I want to collect my location data for the whole month and monitor my daily activities. I hope to know my "footprints" in Pittsburgh regarding sequential geometry information, accumulated data, and data segments by the period during the day.
     </p>
     <p>
-      The biggest potential problem that will result in incomplete data is the failure in data collection. To improve the data completeness, I charged my phone regularly and put it in my pocket all the time. However, there may still be some missing value. For example, my phone died when I was snowboarding due to the cold weather. Also, that day is not representative since I only went to the resort once this year. Thus, to rule out the possibility that these missing data will affect my results, I deleted that day while plotting an accumulated location map (heat map). 
-    </p>
-    <h4>Coherence </h4>
-    <p> 
-      I think the data coherence is good. The data made sense to me since it is fairly represented my daily travel activity and met my expectations of my typical days in CMU. Also, the data points distribution is relevant to the places I spent most of my time. One exception is Feb 4th; there are many outliers on that day. However, since  I traveled to a snowboarding resort, the data make sense to me.  
-    </p>
-    <h4>Correctness </h4>
-    <p>  
-      The dataset is fairly correct.  I manually verified the data in two ways. Before the study, I  collected a test data sample both indoor and outdoor in 5 locations. I spent two hours at each location and checked the data points I collected during the meantime. The result showed that the offset is less than 20 meters and the timestamp matched the time I conducted these tests. I believe it is high enough for this study and there is no need for calibration. Moreover, to ensure that the accuracy is stable over time, I compared the data points I collected during 3 am to 7 am for the first five days. The data showed that I was at home during all these time periods. The results are in agreement with the facts.  
-    </p>
-    <h4>Accountability </h4>
-    <p>  
-      I collect the data with AWARE from my phone 6s GPS sensor. Since iphone5, Apple has been using A-GPS, GLONASS, and Wi-Fi positioning system to provide user location information, which is fairly accurate with less than 10m offset outdoor. I believe the accuracy of this data is high enough for this study purpose. 
+      The Footprint project is one of my ideas to monitor my lifestyle through phone sensors. I collected data like GPS, screen status, and motion, and analyse these data regularly to raise awareness of my unhealthy lifestyle. I will share some of my GPS data with you in the following section.
     </p>
 
-    <h3>My location activity over the time</h3>
+    <h3>MY FOOT PRINTS</h3>
     <p>
-      The first map shows the places I have been during the past month. It is obvious that I have spent most of my time at home or campus. One exception is Feb. 4th. I went to spring sevens and spent a nice day snowboarding there. 
-      (zoom out to view the whole dataset)
+      The first map shows the places I have been during the first month in spring. It is obvious that I have spent most of my time at home or campus. One exception is Feb. 4th. I went to spring sevens and spent a nice day snowboarding there. (zoom out to view the whole dataset)
     </p>
 
     <iframe width="100%" height="520" frameborder="0" src="https://tianxinyu.carto.com/builder/26cd942a-fbf0-11e6-b8bb-0ef24382571b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-    <h3>Time I spend on different locations</h3>
+
+    <h3>TIME I SPENT</h3>
     <p>
       The following map shows my location data in different time segments during the day, from 8:00 am to 12:00 pm/ 0:00 am. If you choice the period from 10 pm to 12 pm,  you will find that about 1/3 of the days that I was at the campus. It is not that worse, actually, 
       probably better than your data? Still, the story would be different if we take samples from U Pitts as a reference.....LOL. 
@@ -60,7 +51,7 @@
 
     <iframe width="100%" height="520" frameborder="0" src="https://tianxinyu.carto.com/builder/f5116e9a-fcb5-11e6-bcc4-0e3ebc282e83/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>  
 
-    <h3>Places I stay</h3>
+    <h3>PLACES I STAY</h3>
     <p>
       The following map is a heat map that shows my accumulated location data. I cleaned out the snowboarding day to make this dataset more representative. The places I spend most of my time were my home, Gates, NSH, FMS building, and the bus stop.
       I assume that there would be a big red spot for the gym. However, I spent quite a lot time to find it ..... 
@@ -70,7 +61,7 @@
     <iframe width="100%" height="640" frameborder="0" src="https://tianxinyu.carto.com/builder/f35be25e-fc8a-11e6-aba7-0e3ff518bd15/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 
-    <h3>Real time monitor</h3>
+    <h3>REAL-TIME MONITOR</h3>
     <p> 
       Here is the real-time monitor of my location. There maybe some delay since I might not be able to sync my data to google cloud without wifi. 
       If you find me stay at campus at midnight, it would be nice to send me a message and push me go home....  
