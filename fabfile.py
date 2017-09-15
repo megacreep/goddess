@@ -4,7 +4,6 @@ from fabric.contrib.files import exists
 REPOS = (("https://github.com/megacreep/goddess.git", "origin", "master"),)
 
 env.user = 'limuyang08'
-env.key_filename = ['temp.pem']
 env.hosts = ['yutianxin.com']
 
 
